@@ -10,6 +10,7 @@ export default function Home() {
 
       <main>
         <h1>Aca estoy de nuevo</h1>
+        <h1>Estoy corriendo en aws utilizando code pipeline</h1>
       </main>
     </div>
   )
