@@ -1,17 +1,21 @@
 import Head from 'next/head'
+import Layout from '../components/layout';
 
-export default function Home() {
+export default function Index() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Skolmi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <h1>Aca estoy de nuevo</h1>
-        <h1>Estoy corriendo en aws utilizando code pipeline</h1>
-      </main>
     </div>
+  )
+}
+
+Index.getLayout = function getLayout(page) {
+  return (
+    <Layout>
+      {page}
+    </Layout>
   )
 }
