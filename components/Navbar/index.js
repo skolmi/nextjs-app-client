@@ -1,19 +1,23 @@
 import style from './Nav.module.css';
-import logo from './../../public/skolmilogo1.png';
-import Image from 'next/image';
+import Head from 'next/head'
+import Logo from '../Logo';
 
-export default function Navbar()  {
-    return(
+export default function Navbar() {
+    return (
         <div className={style.navcontainer}>
-            <a href='/'>
-                <Image
-                    src={logo}
-                    width={200}
-                    height={100}
-                />
-            </a>
+            <Head>
+                <title>Skolmi</title>
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <Logo/>
             <nav>
                 <ul>
+                    <li>
+                        <a href='#'>Inicio</a>
+                    </li>
+                    <li>
+                        <a href='#'>Nosotros</a>
+                    </li>
                     <li>
                         <a href='/payments'>Pagos</a>
                     </li>

@@ -1,3 +1,30 @@
 .navcontainer {
     border: 1px solid #000;
+    display: flex;
+    margin: var(--layout-margin);
+    padding: var(--layout-padding);
+}
+
+.navcontainer nav {
+    display: flex;
+    align-items: center;
+}
+
+.navcontainer ul {
+    list-style: none;
+    display: flex;
+}
+
+.navcontainer li {
+    margin: 1rem;
+}
+
+.navcontainer a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navcontainer a:hover {
+    color: #03c4eb;
 }
