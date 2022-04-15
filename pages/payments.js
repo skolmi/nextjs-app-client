@@ -13,7 +13,7 @@ export default function payments() {
             {
                 name: 'Plan vacacional',
                 price: '30000',
-                description: 'Año escolar estandar'
+                description: 'el mejor plan para tus vacaiones'
             },
             {
                 name: 'pruebame',
@@ -35,7 +35,7 @@ export default function payments() {
 
     return (
         <Layout>
-            <div className="d-flex">{items}</div>
+            <div className="d-flex justify-content-center flex-wrap">{items}</div>
         </Layout>
     );
 }
