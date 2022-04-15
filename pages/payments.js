@@ -1,12 +1,41 @@
 import Layout from "../components/layout";
-import PaymentForm from "../components/PaymentForm";
+import { Card } from "../components/Card";
+
 
 export default function payments() {
+    const data = {
+        products: [
+            {
+                name: 'Año escolar',
+                price: '250000',
+                description: 'Año escolar estandar'
+            },
+            {
+                name: 'Plan vacacional',
+                price: '30000',
+                description: 'Año escolar estandar'
+            },
+            {
+                name: 'pruebame',
+                price: '1000',
+                description: 'esta es una prueba de producción real'
+            }
+        ]
+    }
+
+    const items = data.products.map((item) =>
+            <Card
+                productName={item.name}
+                price={item.price}
+                description={item.description}
+            />
+    )
+
 
 
     return (
         <Layout>
-            <PaymentForm/>
+            <div className="d-flex">{items}</div>
         </Layout>
     );
 }

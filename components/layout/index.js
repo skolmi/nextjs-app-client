@@ -1,7 +1,6 @@
 import Navbar from './../Navbar';
 import style from './layout.module.css'
 import Script from 'next/script';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Layout({ children }) {
     return (
