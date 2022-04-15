@@ -1,46 +1,41 @@
 import Layout from "../components/layout";
-import ScriptEpaycoButtonCheckout from "../components/ScriptEpaycoButtonCheckout";
-import Script from "next/script";
+import { Card } from "../components/Card";
+
 
 export default function payments() {
-    // var ePayco = {
-    //     name: "Vestido Mujer Primavera",
-    //     description: "Vestido Mujer Primavera",
-    //     invoice: "1234",
-    //     currency: "cop",
-    //     amount: "12000",
-    //     tax_base: "0",
-    //     tax: "0",
-    //     country: "co",
-    //     lang: "en",
-    //     external: "false"
-    // }
-    // var handler = ePayco.checkout.configure({
-    //     key:"e2a4be24af5151166c2d45c1fcb1214c",
-    //     test:true
-    // });
+    const data = {
+        products: [
+            {
+                name: 'Año escolar',
+                price: '250000',
+                description: 'Año escolar estandar'
+            },
+            {
+                name: 'Plan vacacional',
+                price: '30000',
+                description: 'Año escolar estandar'
+            },
+            {
+                name: 'pruebame',
+                price: '1000',
+                description: 'esta es una prueba de producción real'
+            }
+        ]
+    }
+
+    const items = data.products.map((item) =>
+            <Card
+                productName={item.name}
+                price={item.price}
+                description={item.description}
+            />
+    )
+
+
 
     return (
         <Layout>
-            <form>
-                <Script
-                    src="https://checkout.epayco.co/checkout.js"
-                    class="epayco-button"
-                    data-epayco-key="e2a4be24af5151166c2d45c1fcb1214c"
-                    data-epayco-amount="50000"
-                    data-epayco-name="Vestido Mujer Primavera"
-                    data-epayco-description="Vestido Mujer Primavera"
-                    data-epayco-currency="cop"
-                    data-epayco-country="co"
-                    data-epayco-test="true"
-                    data-epayco-external="false"
-                    data-epayco-response="https://ejemplo.com/respuesta.html"
-                    data-epayco-confirmation="https://ejemplo.com/confirmacion"
-                    data-epayco-methodconfirmation="get"
-                />
-            </form>
-            <button type="button">Oprimeme</button>
-            <ScriptEpaycoButtonCheckout />
+            <div className="d-flex">{items}</div>
         </Layout>
     );
 }
