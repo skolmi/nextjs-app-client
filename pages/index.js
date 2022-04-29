@@ -12,6 +12,11 @@ export default function Index() {
           <button className={style.btn} type='button'>Comienza hoy</button>
         </div>
       </section>
+      <section>
+        <div>
+          <p>Sobre nosotros</p>
+        </div>
+      </section>
     </Layout>
   )
 }

@@ -9,7 +9,7 @@ export default function LinkBar() {
                 </li>
                 <li className={`${style.list_container} ${style.container_}`}>
                     <li>
-                        <a href="#">Pagos</a>
+                        <a href="/payments">Pagos</a>
                     </li>
                     <li>
                         <a href="#">Escuela de padres</a>

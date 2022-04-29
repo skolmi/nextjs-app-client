@@ -5,7 +5,11 @@
 .list_container li {
     padding-left: var(--layout-padding);
     padding-right: var(--layout-padding);
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+}
+
+.list_container a {
+    font-weight: 600;
 }
 
 .container_unique {

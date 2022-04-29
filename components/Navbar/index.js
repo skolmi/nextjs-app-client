@@ -14,10 +14,10 @@ export default function Navbar() {
                     <a href='#'>Oferta educativa</a>
                 </li>
                 <li>
-                    <a href='/payments'>Bienestar estudiantil</a>
+                    <a href='#'>Bienestar estudiantil</a>
                 </li>
                 <li>
-                    <a href='/payments'>FAQ</a>
+                    <a href='#'>FAQ</a>
                 </li>
             </ul>
         </nav>
