@@ -1,0 +1,18 @@
+.list_container {
+    display: flex;
+}
+
+.list_container li {
+    padding-left: var(--layout-padding);
+    padding-right: var(--layout-padding);
+    border: 1px solid #000;
+}
+
+.container_unique {
+    justify-content: space-between;
+}
+
+.container_ {
+    margin-right: var(--layout-margin);
+}
+

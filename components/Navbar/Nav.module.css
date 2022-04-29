@@ -1,7 +1,4 @@
 .navcontainer {
-    border: 1px solid #000;
-    display: flex;
-    margin: var(--layout-margin);
     padding: var(--layout-padding);
 }
 
@@ -10,13 +7,12 @@
     align-items: center;
 }
 
-.navcontainer ul {
-    list-style: none;
-    display: flex;
-}
-
 .navcontainer li {
     margin: 1rem;
+}
+
+.navcontainer ul {
+    display: flex;
 }
 
 .navcontainer a {
