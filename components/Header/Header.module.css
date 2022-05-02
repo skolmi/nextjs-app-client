@@ -1,0 +1,10 @@
+.header_main{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.logo {
+    padding: var(--layout-padding);
+    padding-left: 2rem;
+}

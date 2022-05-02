@@ -11,9 +11,25 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5% !important;
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
+}
+
+header {
+    /* border: 1px solid #000; */
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(124,124,123,0.7);
+    -moz-box-shadow: 0px 2px 10px 0px rgba(124,124,123,0.7);
+    box-shadow: 0px 2px 10px 0px rgba(124,124,123,0.7);
+}
+
+nav ul {
+        list-style: none;
+}
+
+ul a{
+    color: var(--text-color);
+    text-decoration: none;
 }
