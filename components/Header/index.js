@@ -4,7 +4,7 @@ import Logo from "../Logo";
 import LinkBar from "../LinkBar";
 import style from "./Header.module.css";
 
-export default function Heeader() {
+export default function Header() {
     return (
         <header>
             <Head>

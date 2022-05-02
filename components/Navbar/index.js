@@ -1,7 +1,4 @@
 import style from './Nav.module.css';
-import Head from 'next/head'
-import Heeader from '../Header';
-import Logo from '../Logo';
 
 export default function Navbar() {
     return (
