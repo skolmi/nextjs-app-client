@@ -1,6 +1,6 @@
 import Logo from '../Logo';
 import style from './card.module.css';
-import PaymentForm from '../PaymentForm';
+// import PaymentForm from '../PaymentForm';
 
 const Card = (props) => {
     return (
@@ -10,11 +10,11 @@ const Card = (props) => {
                     <h5 className="card-title">{`${props.productName || 'titulo de la tarjeta'}`}</h5>
                     <p className="card-text">{`${props.price || 'precio'}`}</p>
                     <p className="card-text">{`${props.description || 'Descripción'}`}</p>
-                    <PaymentForm
+                    {/* <PaymentForm
                         price={props.price}
                         productName={props.productName}
                         description={props.description}
-                    />
+                    /> */}
                 </div>
         </div>
     );
