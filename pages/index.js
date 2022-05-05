@@ -4,10 +4,11 @@ import Image from 'next/image';
 import { Card } from '../components/Card';
 import style from './index.module.css'
 import { data } from '../utils/data';
+import FloatingWhatsApp from 'react-floating-whatsapp'
+// import logoImage from './../public/skolmilogo1.png'
 // import Carousel from '../components/Carousel';
 
 export default function Index() {
-
   const products_data = data.products.map((item) =>
   <Card
       productName={item.name}
@@ -35,8 +36,21 @@ const testimony_data = data.testomony.map((item) =>
 />
 )
 
+
+
   return (
     <Layout>
+      <FloatingWhatsApp
+        phoneNumber="+573146853222"
+        accountName="Skolmi"
+        allowClickAway
+        notification
+        notificationDelay={60000} // 1 minute
+        notificationSound
+        chatMessage='Hola, esperamos que te encuentres muy bien, escribe tu mensaje y
+        te redireccionaremos a tu aplicación whatsapp'
+        className={style.floating_Whatsapp}
+      />
       <section>
         <div className={style.img_container}>
           <Image src={mainImage}/>
