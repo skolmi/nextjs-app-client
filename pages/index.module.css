@@ -9,7 +9,7 @@
 
 .img_container .btn {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 22%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -103,4 +103,8 @@
     display: flex;
     justify-content: center;
     padding-bottom: var(--layout-padding);
+}
+
+.floating_Whatsapp {
+    z-index: 999;
 }
