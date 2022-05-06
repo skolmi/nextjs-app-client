@@ -23,13 +23,13 @@ export default function payments() {
         ]
     }
 
-    const items = data.products.map((item) =>
-            <Card
-                productName={item.name}
-                price={item.price}
-                description={item.description}
-            />
-    )
+    // const items = data.products.map((item) =>
+    //         <Card
+    //             productName={item.name}
+    //             price={item.price}
+    //             description={item.description}
+    //         />
+    // )
 
 
 
