@@ -32,22 +32,26 @@ const data = {
         {
             name: 'Transición',
             // price: '250000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales'
+            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
+            srcImage: 'https://images.pexels.com/photos/261895/pexels-photo-261895.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
         },
         {
             name: 'Primaria',
             // price: '30000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales'
+            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
+            srcImage: 'https://images.pexels.com/photos/5905702/pexels-photo-5905702.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
         },
         {
             name: 'Bachillerato',
             // price: '1000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales'
+            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
+            srcImage: 'https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'
         },
         {
             name: 'Bachillerato para adultos',
             // price: '1000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales'
+            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
+            srcImage: 'https://images.pexels.com/photos/8553844/pexels-photo-8553844.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
         }
     ],
     values: [

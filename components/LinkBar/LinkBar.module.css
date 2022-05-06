@@ -1,5 +1,6 @@
 .list_container {
     display: flex;
+    font-size: 1.2rem !important;
 }
 
 .list_container li {
