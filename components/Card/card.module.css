@@ -1,9 +1,0 @@
-.card {
-    max-width: 25rem;
-    padding: var(--layout-padding);
-    margin: var(--layout-margin);
-}
-
-.cardBody {
-    align-items: initial;
-}

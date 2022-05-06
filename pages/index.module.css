@@ -9,7 +9,7 @@
 
 .img_container .btn {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 22%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -64,6 +64,14 @@
     font-size: 2rem;
 }
 
+.title {
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #03c4eb;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
 .separe_item {
     background-color: #F58C23;
     /* background-color: #d53a9d; */
@@ -103,4 +111,8 @@
     display: flex;
     justify-content: center;
     padding-bottom: var(--layout-padding);
+}
+
+.floating_Whatsapp {
+    z-index: 999;
 }
