@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import { Card } from "../components/Card";
+// import { Card } from "../components/Card";
 
 
 export default function payments() {
@@ -35,7 +35,7 @@ export default function payments() {
 
     return (
         <Layout>
-            <div className="d-flex justify-content-center flex-wrap">{items}</div>
+            <div>aca estoy</div>
         </Layout>
     );
 }
