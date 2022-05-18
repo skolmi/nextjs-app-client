@@ -7,7 +7,7 @@ export default function PaymentForm(props) {
         script.src="https://checkout.epayco.co/checkout.js"
         script.setAttribute('class',"epayco-button")
         script.setAttribute('data-epayco-key',"e2a4be24af5151166c2d45c1fcb1214c")
-        script.setAttribute('data-epayco-amount',`${props.price||"50000"}`)
+        script.setAttribute('data-epayco-amount',`${props.price||"1000"}`)
         script.setAttribute('data-epayco-name',`${props.productName||"curso de fin de año"}`)
         script.setAttribute('data-epayco-description',`${props.description|| "curso de fin de año"}`)
         script.setAttribute('data-epayco-currency','cop')

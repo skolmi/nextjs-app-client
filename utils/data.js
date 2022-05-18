@@ -1,32 +1,3 @@
-import { faker } from '@faker-js/faker';
-
-// const random_data = {
-//     products: [
-
-//     ],
-//     values : [
-
-//     ],
-//     benefits: [
-
-//     ]
-// };
-
-// function generateData() {
-//     let i = 0;
-//     while (i < 5) {
-//         const name = faker.commerce.productName();
-//         const price = faker.commerce.price(60000, 1250000, 0, "$");
-//         const description = faker.commerce.productDescription();
-//         const benefits = faker.commerce.productAdjective();
-//         random_data.products.push(name);
-//         i = i++
-//     }
-// }
-
-// generateData();
-// console.log(random_data)
-
 const data = {
     products: [
         {
