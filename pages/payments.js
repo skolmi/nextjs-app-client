@@ -1,41 +1,32 @@
 import Layout from "../components/layout";
-// import { Card } from "../components/Card";
-
+import { useState, useEffect } from "react";
+import axios from "axios";
+import OtherCard from "../components/OtherCard";
 
 export default function payments() {
-    const data = {
-        products: [
-            {
-                name: 'Año escolar',
-                price: '250000',
-                description: 'Año escolar estandar'
-            },
-            {
-                name: 'Plan vacacional',
-                price: '30000',
-                description: 'el mejor plan para tus vacaiones'
-            },
-            {
-                name: 'pruebame',
-                price: '1000',
-                description: 'esta es una prueba de producción real'
-            }
-        ]
-    }
+    const [products, setProducts] = useState([]);
 
-    // const items = data.products.map((item) =>
-    //         <Card
-    //             productName={item.name}
-    //             price={item.price}
-    //             description={item.description}
-    //         />
-    // )
-
-
+    useEffect(async () => {
+        const config = {
+            method: "get",
+            url: "http://localhost:8080/api/v1/products",
+        }
+        var response = await axios(config);
+        // iterate over the data and create a new array of products
+        const products = response.data.body.map(product => (
+            <div>
+                <OtherCard
+                    productName={product.name}
+                    description={product.description}
+                />
+            </div>
+        ))
+        setProducts(products);
+    }, [])
 
     return (
         <Layout>
-            <div>aca estoy</div>
+            <div>{products}</div>
         </Layout>
     );
 }
