@@ -3,7 +3,7 @@
 
 FROM node:16.15.0 as dependencies
 WORKDIR /app
-COPY package*.json .
+COPY package.json .
 RUN npm install --force
 
 FROM node:16.15.0 as builder
