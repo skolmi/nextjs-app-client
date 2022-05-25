@@ -1,18 +1,18 @@
 # Docker multi-stage build
 # nextjs app
 
-FROM node:16.15.0 as dependencies
+FROM public.ecr.aws/bitnami/node:16.15.0 as dependencies
 WORKDIR /app
 COPY package.json .
 RUN npm install --force
 
-FROM node:16.15.0 as builder
+FROM public.ecr.aws/bitnami/node:16.15.0 as builder
 WORKDIR /app
 COPY . .
 COPY --from=dependencies /app/node_modules ./node_modules
 RUN npm run build
 
-FROM node:16.15.0 as runner
+FROM public.ecr.aws/bitnami/node:16.15.0 as runner
 WORKDIR /app
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
