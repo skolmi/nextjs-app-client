@@ -2,7 +2,7 @@ import style from './Nav.module.css';
 
 export default function Navbar() {
     return (
-        <nav className={style.navcontainer}>
+        <nav >
             <ul>
                 <li>
                     <a href='#'>Nosotros</a>

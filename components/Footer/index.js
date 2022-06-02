@@ -1,10 +1,12 @@
 import Logo from '../Logo';
+
 import {
     Box,
     chakra,
     Container,
     Link,
     Stack,
+    StackDivider,
     Text,
     useColorModeValue,
     VisuallyHidden,
@@ -21,9 +23,8 @@ const SocialButton = ({
             bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
             rounded={'full'}
             w={8}
-            h={8}
-            cursor={'pointer'}
-            as={'a'}
+            h={8}            
+            cursor={'pointer'}            
             href={href}
             display={'inline-flex'}
             alignItems={'center'}
@@ -38,42 +39,67 @@ const SocialButton = ({
     );
 };
 
+
 export default function Footer() {
     return (
-        <Box
-            bg={useColorModeValue('gray.50', 'gray.900')}
-            color={useColorModeValue('gray.700', 'gray.200')}>
-            <Container
-                as={Stack}
-                maxW={'6xl'}
-                py={4}
-                spacing={4}
-                justify={'center'}
-                align={'center'}>
-                <Logo />
-                <Stack direction={'row'} spacing={6}>
+        <Box  bgColor={'#007B77'} textColor={'white'}>
+                <Container className='row'  maxW={'120ch'}>
+                <Container className='col'                  
+                 py={6}
+                 as={Stack}
+                 spacing={4}
+                 textAlign={'left'}   
+                 padding={'20px'}
+                 margin={'10px'}
+
+               >
+            
+                <Logo  />
+                <Text
+                 padding={'5px'}
+                 margin={'5px'}>© 2022 Skolmi S.A Todos  <br></br> los derechos reservados</Text>                               
+            </Container>
+
+            <Container className='col' 
+          padding={'20px'}
+          margin={'10px'}
+            spacing={4}
+            as={Stack}
+          
+            
+            >
+            <Stack direction={'column'} spacing={6}>
                     <Link href={'#'}>Nosotros</Link>
-                    <Link href={'#'}>Oferta Educativa</Link>
-                    <Link href={'#'}>PQR</Link>
-                    <Link href={'#'}>Contact</Link>
+                    <Link href={'#'}>Escuelas de padres</Link>
+                    <Link href={'#'}>¿Quiénes Somos?</Link>
+                    <Link href={'#'}>Certificación</Link>
                 </Stack>
             </Container>
 
-            <Box
-                borderTopWidth={1}
-                borderStyle={'solid'}
-                borderColor={useColorModeValue('gray.200', 'gray.700')}>
-                <Container
-                    as={Stack}
-                    maxW={'6xl'}
-                    py={4}
-                    direction={{ base: 'column', md: 'row' }}
-                    spacing={4}
-                    justify={{ base: 'center', md: 'space-between' }}
-                    align={{ base: 'center', md: 'center' }}>
-                    <Text>© 2022 Skolmi</Text>
-                    <Stack direction={'row'} spacing={6}>
-                        <SocialButton label={'Twitter'} href={'#'}>
+            <Container className='col' 
+          padding={'20px'}
+          margin={'10px'}
+         spacing={4}
+         as={Stack} >
+         <Stack direction={'column'} spacing={6}>
+                 <Link href={'#'}>¿Preguntas?</Link>
+                 <Link href={'#'}>Preguntas <br></br> frecuentes</Link>                
+             </Stack>
+         </Container>
+          
+    
+           
+                <Container className='col' 
+               
+               padding={'20px'}
+               margin={'10px'}
+              spacing={4}
+            
+                    >
+                  
+                    <Stack direction={'column'} spacing={6}>
+                        <Text>Contactanós</Text>
+                        <SocialButton label={'Twitter'} href={'#'}> 
                             <FaTwitter />
                         </SocialButton>
                         <SocialButton label={'YouTube'} href={'#'}>
@@ -84,7 +110,8 @@ export default function Footer() {
                         </SocialButton>
                     </Stack>
                 </Container>
+                </Container>
             </Box>
-        </Box>
+      
     );
 }

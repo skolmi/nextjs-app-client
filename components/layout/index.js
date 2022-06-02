@@ -3,8 +3,7 @@ import Script from 'next/script';
 import Header from '../Header';
 import Footer from '../Footer';
 import OtherHeader from '../OtherHeader';
-import LinkBar from "../LinkBar";
-
+import LinkBar from '../LinkBar';
 export default function Layout({ children }) {
     return (
         <>

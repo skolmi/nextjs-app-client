@@ -51,9 +51,11 @@
 .container h1 {
     padding: var(--layout-padding);
     text-align: center;
-    color: #03c4eb;
-    font-weight: 600;
-    font-size: 2rem;
+    color: black;
+    font-weight: 600;    
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .container h2 {
@@ -85,8 +87,10 @@
 }
 
 
-.container p {
+.container {
     text-align: justify;
+    font-size: 18px;
+
 }
 
 .img_container a {
@@ -95,9 +99,9 @@
 }
 
 .border_gradient{
-    border: 3px transparent;
+    
     border-radius: 10px;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #34ddff,#d53a9d);
+ /*   background-image: linear-gradient(white, white), radial-gradient(circle at top left, #34ddff,#d53a9d);*/
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -115,4 +119,53 @@
 
 .floating_Whatsapp {
     z-index: 999;
+}
+
+.number{
+
+    font-weight: bold;
+    font-size: 60px;
+    color:  #007B77;
+    text-align: center;
+}
+
+.image{
+
+    
+    color: #0B0B61;
+    display: flex;
+    justify-content: center;
+
+}
+
+.texto{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+.educacionvirtual{
+
+    background-color: #0B0B61;
+   padding: 20px;
+}
+
+.texto1educacionvirtual{
+
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.texto2educacionvirtual{
+
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+    text-align: center;
+    
 }
