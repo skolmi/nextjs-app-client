@@ -169,3 +169,10 @@
     text-align: center;
     
 }
+
+.testimony {
+    background-color: #00194A;
+    min-height: 50rem;
+    display: flex;
+    justify-content: center;
+}
