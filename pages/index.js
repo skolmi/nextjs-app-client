@@ -44,7 +44,7 @@ export default function Index() {
       />
       <section class="home_banner_area">
         <div class="style.img_container">
-          <div class="container">
+          <div>
             <div class="row">
 
               <Image src={mainImage} />
@@ -149,6 +149,15 @@ export default function Index() {
         <Feature />
       </section>
       <section className={`${style.testimony} `}>
+        <div 
+          className={`${style.container} ${style.title}`}
+          id
+        >
+          <h2>Testimonios</h2>
+          <span>Quienes ya confian en Skolmi</span>
+        </div>
+        <Testomony />
+        <Testomony />
         <Testomony />
       </section>
     </Layout>

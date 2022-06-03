@@ -21,11 +21,13 @@ export default function Testimony() {
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.800')}
                 boxShadow={'2xl'}
-                rounded={'md'}
+                // rounded={'md'}
+                // className={style.roundedCard}
                 overflow={'Visible'}
                 borderRadius={'lg'}
+                className={`${style.card} ${style.roundedCard}`}
             >
-                <Flex justify={'center'} mt={-70} className={style.roundedCard}>
+                <Flex justify={'center'} mt={-70}  >
                     <Image
                         boxSize={'136px'}
                         src={

@@ -1,3 +1,6 @@
 .roundedCard {
-    border-radius: 20px;
+    border-radius: 30px !important;
+}
+.card {
+    margin: 20px;
 }
