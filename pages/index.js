@@ -118,26 +118,25 @@ export default function Index() {
           <h1 className={style.texto1educacionvirtual}>Programas</h1>
           <h2 className={style.texto2educacionvirtual}>Educación Virtual</h2>
         </div>
-
       </section>
 
-      <section className={style.container}>
-        <div className={style.separe_item}></div>
-        <h2>Oferta academica</h2>
+      <section>
+        <div className={style.container}>
+          <h2>Oferta academica</h2>
+        </div>  
         <div className='d-flex justify-content-center flex-wrap'>
           {products_data}
         </div>
       </section>
-      {/* <section className={`${style.values_section} ${style.container}`}>
-        <div className={style.separe_item}></div>
-        <h2>Valores</h2>
-      </section> */}
-      {/* <Feature/> */}
-      <section className={``}>
-        <div className={style.separe_item}></div>
-        <h2 className={style.title}>Beneficios y ventajas</h2>
-        <Feature />
+
+      <section>
+        <div className={style.container}>
+          <h2 className={style.title}>Beneficios y ventajas</h2>
+          <span>¿Por qué escogernos?</span>
+        </div>
       </section>
+
+
       <section className={`${style.testimony} `}>
         <div 
           className={`${style.container} ${style.title}`}
