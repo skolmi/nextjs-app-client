@@ -7,6 +7,7 @@ import { data } from '../utils/data';
 import FloatingWhatsApp from 'react-floating-whatsapp'
 import Testomony from './../components/Testimony';
 import Feature from '../components/Feature';
+import BannerEndPage from '../components/BannerEndPage';
 
 export default function Index() {
   const products_data = data.products.map((item) =>
@@ -42,20 +43,9 @@ export default function Index() {
         te redireccionaremos a tu aplicación whatsapp'
         className={style.floating_Whatsapp}
       />
-      <section class="home_banner_area">
-        <div class="style.img_container">
-          <div>
-            <div class="row">
-
+      <section className="home_banner_area">
+        <div className={style.img_container}>
               <Image src={mainImage} />
-              {/* <div className='container-fluid'>
-            <p className={`${style.text} text-wrap`}>Educación básica primaria y bachillerato con modalidad 100% virtual.</p>
-          </div> */}
-              {/*
-         <button className={style.btn} type='button'><a href='#'>Empieza hoy</a></button>
-        */}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -128,26 +118,25 @@ export default function Index() {
           <h1 className={style.texto1educacionvirtual}>Programas</h1>
           <h2 className={style.texto2educacionvirtual}>Educación Virtual</h2>
         </div>
-
       </section>
 
-      <section className={style.container}>
-        <div className={style.separe_item}></div>
-        <h2>Oferta academica</h2>
+      <section>
+        <div className={style.container}>
+          <h2>Oferta academica</h2>
+        </div>  
         <div className='d-flex justify-content-center flex-wrap'>
           {products_data}
         </div>
       </section>
-      {/* <section className={`${style.values_section} ${style.container}`}>
-        <div className={style.separe_item}></div>
-        <h2>Valores</h2>
-      </section> */}
-      {/* <Feature/> */}
-      <section className={``}>
-        <div className={style.separe_item}></div>
-        <h2 className={style.title}>Beneficios y ventajas</h2>
-        <Feature />
+
+      <section>
+        <div className={style.container}>
+          <h2 className={style.title}>Beneficios y ventajas</h2>
+          <span>¿Por qué escogernos?</span>
+        </div>
       </section>
+
+
       <section className={`${style.testimony} `}>
         <div 
           className={`${style.container} ${style.title}`}
@@ -160,6 +149,7 @@ export default function Index() {
         <Testomony />
         <Testomony />
       </section>
+      <BannerEndPage/>
     </Layout>
   )
 }
