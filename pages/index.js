@@ -7,6 +7,7 @@ import { data } from '../utils/data';
 import FloatingWhatsApp from 'react-floating-whatsapp'
 import Testomony from './../components/Testimony';
 import Feature from '../components/Feature';
+import BannerEndPage from '../components/BannerEndPage';
 
 export default function Index() {
   const products_data = data.products.map((item) =>
@@ -42,20 +43,9 @@ export default function Index() {
         te redireccionaremos a tu aplicación whatsapp'
         className={style.floating_Whatsapp}
       />
-      <section class="home_banner_area">
-        <div class="style.img_container">
-          <div>
-            <div class="row">
-
+      <section className="home_banner_area">
+        <div className={style.img_container}>
               <Image src={mainImage} />
-              {/* <div className='container-fluid'>
-            <p className={`${style.text} text-wrap`}>Educación básica primaria y bachillerato con modalidad 100% virtual.</p>
-          </div> */}
-              {/*
-         <button className={style.btn} type='button'><a href='#'>Empieza hoy</a></button>
-        */}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -160,6 +150,7 @@ export default function Index() {
         <Testomony />
         <Testomony />
       </section>
+      <BannerEndPage/>
     </Layout>
   )
 }
