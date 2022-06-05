@@ -7,7 +7,7 @@
     height: auto;
 }
 
-.img_container .btn {
+.img_container .form_container {
     position: absolute;
     top: 60%;
     left: 80%;
@@ -28,7 +28,7 @@
     color: white;
 }
 
-.btn {
+.form_container {
     color: white;
     font-weight: 600;
     font-size: 2rem;

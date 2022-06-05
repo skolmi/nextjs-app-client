@@ -8,6 +8,7 @@ import FloatingWhatsApp from 'react-floating-whatsapp'
 import Testomony from './../components/Testimony';
 import Feature from '../components/Feature';
 import BannerEndPage from '../components/BannerEndPage';
+import FormContact from '../components/FormContact';
 
 export default function Index() {
   const products_data = data.products.map((item) =>
@@ -46,8 +47,8 @@ export default function Index() {
       <section className="home_banner_area">
         <div className={style.img_container}>
           <Image src={mainImage} />
-          <div className={style.btn}>
-            aca estoy
+          <div className={style.form_container}>
+            <FormContact/>
           </div>
         </div>
       </section>
