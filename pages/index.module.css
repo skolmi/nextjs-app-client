@@ -10,7 +10,7 @@
 .img_container .btn {
     position: absolute;
     top: 60%;
-    left: 22%;
+    left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -29,19 +29,14 @@
 }
 
 .btn {
-    background-color: var(--bs-cyan); /*Variable Bootstrap*/
     color: white;
     font-weight: 600;
     font-size: 2rem;
     padding: 12px 24px;
-    border: none;
-    cursor: pointer;
+    border: none;   
     border-radius: 5px;
 }
 
-.btn:hover {
-    background-color: #34ddff;
-}
 
 .container {
     padding: var(--layout-padding);
@@ -73,7 +68,7 @@
 }
 
 .separe_item {
-    background-color: #F58C23;
+    background-color: #FF8C00;
     /* background-color: #d53a9d; */
     border-radius: 0.5rem;
     content: "";
