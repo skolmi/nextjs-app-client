@@ -1,3 +1,4 @@
+import style from './style.module.css';
 import Logo from '../Logo';
 import {
     Box,
@@ -12,7 +13,7 @@ import {
     Popover,
     PopoverTrigger,
     PopoverContent,
-    useColorModeValue, 
+    useColorModeValue,
     useBreakpointValue,
     useDisclosure,
     position,
@@ -42,13 +43,19 @@ export default function OtherHeader() {
                 justifyContent={'flex-end'}
                 borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}>
+                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+                    <Logo />
+                    <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+                        <DesktopNav />
+                    </Flex>
+                </Flex>
                 <Flex
+                    className={style.hamburger}
                     flex={{ base: 1, md: 'auto' }}
                     ml={{ base: -2 }}
                     display={{ base: 'flex', md: 'none' }}>
                     <IconButton
                         onClick={onToggle}
-                        
                         icon={
                             isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
                         }
@@ -56,14 +63,6 @@ export default function OtherHeader() {
                         aria-label={'Toggle Navigation'}
                     />
                 </Flex>
-                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-               {/*     <Logo/> */}
-                    <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
-                        <DesktopNav />
-                    </Flex>
-                </Flex>
-
-               
             </Flex>
 
             <Collapse in={isOpen} animateOpacity>
@@ -77,16 +76,16 @@ const DesktopNav = () => {
     const linkColor = useColorModeValue('gray.600', 'gray.200');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
     const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-    
+
 
     return (
-        <Stack  direction={'row'} spacing={6} padding={'6'}   justifyContent={'flex-end'} >
+        <Stack direction={'row'} spacing={6} padding={'6'} justifyContent={'flex-end'} >
             {NAV_ITEMS.map((navItem) => (
                 <Box key={navItem.label} >
                     <Popover trigger={'hover'} placement={'bottom-start'}  >
                         <PopoverTrigger>
                             <Link
-                                 justifyContent={'flex-end'}
+                                justifyContent={'flex-end'}
                                 p={2}
                                 href={navItem.href ?? '#'}
                                 fontSize={'2xl'}
@@ -106,12 +105,12 @@ const DesktopNav = () => {
                                 border={0}
                                 boxShadow={'xl'}
                                 bg={popoverContentBgColor}
-                                p={4}                        
+                                p={4}
                                 rounded={'xl'}
                                 minW={'sm'}>
                                 <Stack>
                                     {navItem.children.map((child) => (
-                                        <DesktopSubNav key={child.label} {...child}  />
+                                        <DesktopSubNav key={child.label} {...child} />
                                     ))}
                                 </Stack>
                             </PopoverContent>
@@ -125,7 +124,7 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
     return (
-        <Link 
+        <Link
             href={href}
             role={'group'}
             display={'block'}
@@ -223,19 +222,19 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
 
-    {    
-       label: 'Nosotros',
-       // children: [
-            // {
-            //     label: 'Explore Design Work',
-            //     subLabel: 'Trending Design to inspire you',
-            //     href: '#',
-            // },
-            // {
-            //     label: 'New & Noteworthy',
-            //     subLabel: 'Up-and-coming Designers',
-            //     href: '#',
-            // },
+    {
+        label: 'Nosotros',
+        // children: [
+        // {
+        //     label: 'Explore Design Work',
+        //     subLabel: 'Trending Design to inspire you',
+        //     href: '#',
+        // },
+        // {
+        //     label: 'New & Noteworthy',
+        //     subLabel: 'Up-and-coming Designers',
+        //     href: '#',
+        // },
         //],
     },
     {

@@ -1,20 +1,18 @@
 import style from "./LinkBar.module.css";
+import platformAccessButton from '../../public/boton_acceso_plataforma.svg'
+import Image from "next/image";
 
 
 export default function LinkBar() {
     return (
-        <nav  className="navbar navbar-toggleable-md navbar-light bg-faded" id={`${style.nav}`} >
-
-            
-         <div className={`${style.divboton}`}>
-                   
-<a href="#"  className={`${style.botonPlataforma}`}>Acceso a Plataforma</a>
-</div>      
-                   
-                   
-                <form  className={`${style.nav2}`}>
-            <ul className={`${style.list_container} ${style.container_unique}`}>                
-                <li className={`${style.list_container} ${style.container_}`}>
+        <nav className={style.linkBar}>
+            <div className={style.buttonContainer}>
+                <button type="button">
+                    <Image src={platformAccessButton} alt="Acceso a Plataforma" />
+                </button>
+            </div>
+            <form>
+                <ul>
                     <li>
                         <a href="/payments">Pagos</a>
                     </li>
@@ -27,9 +25,8 @@ export default function LinkBar() {
                     <li>
                         <a href="#">PQR</a>
                     </li>
-                </li>
-            </ul>
-  </form>
+                </ul>
+            </form>
         </nav>
     );
 }

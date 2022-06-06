@@ -7,7 +7,6 @@ import LinkBar from '../LinkBar';
 export default function Layout({ children }) {
     return (
         <>
-            {/* <Header/> */}
             <LinkBar/>
             <OtherHeader/>
             <main>{children}</main>
