@@ -9,8 +9,8 @@
 
 .img_container .form_container {
     position: absolute;
-    top: 60%;
-    left: 80%;
+    top: 50%;
+    left: 82%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -18,7 +18,7 @@
 .img_container .text {
     position: absolute;
     top: 60%;
-    left: 22%;
+    left: 30%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -27,16 +27,6 @@
     font-size: 2rem;
     color: white;
 }
-
-.form_container {
-    color: white;
-    font-weight: 600;
-    font-size: 2rem;
-    padding: 12px 24px;
-    border: none;   
-    border-radius: 5px;
-}
-
 
 .container {
     padding: var(--layout-padding);
@@ -140,9 +130,8 @@
 }
 
 .educacionvirtual{
-
     background-color: #0B0B61;
-   padding: 20px;
+    padding: 20px;
 }
 
 .texto1educacionvirtual{
