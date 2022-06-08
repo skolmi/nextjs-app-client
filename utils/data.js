@@ -1,28 +1,33 @@
+import adultos from '../assets/Adultos.png';
+import bachillerato from '../assets/Bachillerato.png';
+import preescolar from '../assets/Preescolar.png';
+import primaria from '../assets/Primaria.png';
+
 const data = {
     products: [
         {
-            name: 'Transición',
+            name: 'Preescolar',
             // price: '250000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
-            srcImage: 'https://images.pexels.com/photos/261895/pexels-photo-261895.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+            description: '¡ Una experiencia es muy importante !, asegurate que tus hijos tengan una buena experiencia estudiando en Skolmi',
+            srcImage: {preescolar},
         },
         {
             name: 'Primaria',
             // price: '30000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
-            srcImage: 'https://images.pexels.com/photos/5905702/pexels-photo-5905702.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+            description: 'Metodología afectiva para que tus se diviertan mientras aprenden.¡Estudiar no debe ser aburrido!',
+            srcImage: {primaria}
         },
         {
             name: 'Bachillerato',
             // price: '1000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
-            srcImage: 'https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260'
+            description: 'Brindamos una educación inclusiva y afectiva con un toque de flexibilidad.¡Disfruta de tu bachillerato en Skolmi!',
+            srcImage: {bachillerato}
         },
         {
-            name: 'Bachillerato para adultos',
+            name: 'Adultos',
             // price: '1000',
-            description: 'Plataforma 100 virtual, profesores certificados, distintos medios de pago, certificaciones con instituciones aliadas nacionales',
-            srcImage: 'https://images.pexels.com/photos/8553844/pexels-photo-8553844.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+            description: 'Con Skolmi podrás ser bachiller sin importar tu edad, nuestra metodología es flexible y eficaz.',
+            srcImage: {adultos}
         }
     ],
     values: [

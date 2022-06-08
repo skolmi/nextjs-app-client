@@ -5,7 +5,6 @@ import {
     Flex,
     Text,
     IconButton,
-    Button,
     Stack,
     Collapse,
     Icon,
@@ -14,11 +13,7 @@ import {
     PopoverTrigger,
     PopoverContent,
     useColorModeValue,
-    useBreakpointValue,
     useDisclosure,
-    position,
-    extendTheme,
-    Center,
 } from '@chakra-ui/react';
 import {
     HamburgerIcon,
@@ -43,7 +38,7 @@ export default function OtherHeader() {
                 justifyContent={'flex-end'}
                 borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}>
-                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'space-between' }}>
                     <Logo />
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
                         <DesktopNav />
@@ -88,9 +83,9 @@ const DesktopNav = () => {
                                 justifyContent={'flex-end'}
                                 p={2}
                                 href={navItem.href ?? '#'}
-                                fontSize={'2xl'}
+                                fontSize={'18px'}
                                 alignItems={'Center'}
-                                fontWeight={500}
+                                fontWeight={600}
                                 color={linkColor}
                                 _hover={{
                                     textDecoration: 'none',
@@ -139,7 +134,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
                         fontWeight={500}>
                         {label}
                     </Text>
-                    <Text fontSize={'2xl'}>{subLabel}</Text>
+                    <Text fontSize={'18px'}>{subLabel}</Text>
                 </Box>
                 <Flex
                     transition={'all .3s ease'}
