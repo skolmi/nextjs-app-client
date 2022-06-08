@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import OtherCard from "../components/OtherCard";
+import Card from "../components/Card";
 
 export default function payments() {
     const [products, setProducts] = useState([]);
@@ -15,7 +15,7 @@ export default function payments() {
         // iterate over the data and create a new array of products
         const products = response.data.body.map(product => (
             <div>
-                <OtherCard
+                <Card
                     productName={product.name}
                     description={product.description}
                 />
