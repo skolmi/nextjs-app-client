@@ -21,8 +21,6 @@ export default function Testimony() {
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.800')}
                 boxShadow={'2xl'}
-                // rounded={'md'}
-                // className={style.roundedCard}
                 overflow={'Visible'}
                 borderRadius={'lg'}
                 className={`${style.card} ${style.roundedCard}`}
