@@ -3,31 +3,35 @@ import bachillerato from '../assets/Bachillerato.png';
 import preescolar from '../assets/Preescolar.png';
 import primaria from '../assets/Primaria.png';
 
+import Image from 'next/image';
+
+
 const data = {
     products: [
         {
             name: 'Preescolar',
             // price: '250000',
             description: '¡ Una experiencia es muy importante !, asegurate que tus hijos tengan una buena experiencia estudiando en Skolmi',
-            srcImage: {preescolar},
+            //use the image from google drive folder
+            srcImage: './../assets/Preescolar.png'
         },
         {
             name: 'Primaria',
             // price: '30000',
             description: 'Metodología afectiva para que tus se diviertan mientras aprenden.¡Estudiar no debe ser aburrido!',
-            srcImage: {primaria}
+            srcImage: ''
         },
         {
             name: 'Bachillerato',
             // price: '1000',
             description: 'Brindamos una educación inclusiva y afectiva con un toque de flexibilidad.¡Disfruta de tu bachillerato en Skolmi!',
-            srcImage: {bachillerato}
+            srcImage: ''
         },
         {
             name: 'Adultos',
             // price: '1000',
             description: 'Con Skolmi podrás ser bachiller sin importar tu edad, nuestra metodología es flexible y eficaz.',
-            srcImage: {adultos}
+            srcImage: ''
         }
     ],
     values: [

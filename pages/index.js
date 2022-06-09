@@ -12,16 +12,15 @@ import icon_18_años from '../assets/18_años_de_experiencia.svg';
 import icon_90_profesionales from '../assets/90_Profesionales_en_educación.svg';
 import icon_2500_estudiantes from '../assets/2500_estudiantes_graduados.svg';
 import Head from 'next/head'
+import primariaImage from '../assets/Primaria.png';
+import bachilleratoImage from '../assets/Bachillerato.png';
+import preescolarImage from '../assets/Preescolar.png';
+import adultosImage from '../assets/Adultos.png';
+
+
 
 
 export default function Index() {
-  const products_data = data.products.map((item) =>
-    <Card
-      productName={item.name}
-      description={item.description}
-      srcimage={item.srcImage}
-    />
-  )
   return (
     <>
       <Head>
@@ -38,8 +37,7 @@ export default function Index() {
           notification
           notificationDelay={60000} // 1 minute
           notificationSound
-          chatMessage='Hola, esperamos que te encuentres muy bien, escribe tu mensaje y
-        te redireccionaremos a tu aplicación whatsapp'
+          chatMessage=' ¡ Estamos para ayudarte !, te responderemos en el menor tiempo posible'
           className={style.floating_Whatsapp}
         />
         <section className="home_banner_area">
@@ -99,7 +97,7 @@ export default function Index() {
             <h2 className={style.texto2educacionvirtual}>Educación Virtual</h2>
           </div>
           <div className='d-flex justify-content-center flex-wrap'>
-            {products_data}
+            <Image src={primariaImage}/>
           </div>
         </section>
 
