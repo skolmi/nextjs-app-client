@@ -1,4 +1,11 @@
 import Logo from '../Logo';
+import Image from 'next/image';
+import LogoSkolmiWhite from './../../assets/Skolmi.png'
+import iconyoutube from './../../assets/youtube.svg';
+import iconfacebook from './../../assets/facebook.svg';
+import iconinstagram from './../../assets/instagram.svg';
+import iconwhatsaap from './../../assets/whatsapp.svg';
+import logoIso from './../../public/iconiso.png';
 
 import {
     Box,
@@ -43,32 +50,33 @@ const SocialButton = ({
 export default function Footer() {
     return (
         <Box  bgColor={'#007B77'} textColor={'white'}>
-                <Container className='row'  maxW={'120ch'}>
+                <Container className='row'  maxW={'100ch'}>
                 <Container className='col'                  
                  py={6}
                  as={Stack}
-                 spacing={4}
+                 spacing={6}
                  textAlign={'left'}   
                  padding={'20px'}
                  margin={'10px'}
 
                >
-            
-                <Logo  />
-                <Text
+            <Image src={LogoSkolmiWhite}   alt='footer'></Image>
+            <Text fontSize={17}
                  padding={'5px'}
                  margin={'5px'}>© 2022 Skolmi S.A Todos  <br></br> los derechos reservados</Text>                               
+            
+                       
             </Container>
 
             <Container className='col' 
-          padding={'20px'}
+          padding={'10px'}
           margin={'10px'}
-            spacing={4}
+            spacing={6}
             as={Stack}
           
             
             >
-            <Stack direction={'column'} spacing={6}>
+            <Stack  fontSize={20} direction={'column'} spacing={6}>
                     <Link href={'#'}>Nosotros</Link>
                     <Link href={'#'}>Escuelas de padres</Link>
                     <Link href={'#'}>¿Quiénes Somos?</Link>
@@ -77,11 +85,11 @@ export default function Footer() {
             </Container>
 
             <Container className='col' 
-          padding={'20px'}
+          padding={'10px'}
           margin={'10px'}
-         spacing={4}
+         spacing={6}
          as={Stack} >
-         <Stack direction={'column'} spacing={6}>
+         <Stack direction={'column'} fontSize={20} spacing={6}>
                  <Link href={'#'}>¿Preguntas?</Link>
                  <Link href={'#'}>Preguntas <br></br> frecuentes</Link>                
              </Stack>
@@ -91,26 +99,35 @@ export default function Footer() {
            
                 <Container className='col' 
                
-               padding={'20px'}
+               padding={'10px'}
                margin={'10px'}
-              spacing={4}
+              
             
                     >
-                  
-                    <Stack direction={'column'} spacing={6}>
-                        <Text>Contactanós</Text>
-                        <SocialButton label={'Twitter'} href={'#'}> 
-                            <FaTwitter />
-                        </SocialButton>
-                        <SocialButton label={'YouTube'} href={'#'}>
-                            <FaYoutube />
-                        </SocialButton>
-                        <SocialButton label={'Instagram'} href={'#'}>
-                            <FaInstagram />
-                        </SocialButton>
+            <Text fontSize={20}>Contactanós</Text>      
+                    <Stack direction={'row'} spacing={-5} py={'5'} >
+                     <Container>
+                    <Image src={iconfacebook}   alt='footer'></Image>                    
+
+                    </Container>   
+                    <Container>
+                    <Image src={iconyoutube}  alt='footer'></Image>
+                    </Container>
+                    <Container>
+                    <Image src={iconinstagram}  alt='footer'></Image>
+                    </Container>
+                    <Container>
+                    <Image src={iconwhatsaap}  alt='footer'></Image>
+                    </Container>
+             
                     </Stack>
                 </Container>
                 </Container>
+                <Container className='col' direction={'row'} maxW={'90ch'}>
+                <Image src={logoIso} width={'120%'}  height={'85%'} alt='footer'></Image>     
+                </Container>
+               
+               
             </Box>
       
     );

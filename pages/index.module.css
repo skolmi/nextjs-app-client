@@ -41,7 +41,7 @@
     color: black;
     font-weight: 600;    
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
 
 }
 
@@ -51,6 +51,8 @@
     color: #FF8C00;
     font-weight: 600;
     font-size: 2rem;
+    font-size: 40px;
+    font-family: 'Poppins';
 }
 
 .title {
@@ -73,7 +75,9 @@
 .container span {
     text-align: center;
     width: 100vw;
+    font-size: 25px;
     color: white;
+    font-family: 'Poppins';
 }
 
 .img_container a {
@@ -94,6 +98,12 @@
     padding-right: 5%;
 }
 
+.paragraph_containerventajas {
+    padding-left: 5;
+    margin: 70px;
+    padding-right: 5%;
+}
+
 .button_container {
     display: flex;
     justify-content: center;
@@ -110,6 +120,7 @@
     font-size: 60px;
     color:  #007B77;
     text-align: center;
+    font-family: 'Poppins';
 }
 
 .image{
@@ -117,6 +128,7 @@
     
     color: #0B0B61;
     display: flex;
+    padding: 10px;
     justify-content: center;
 
 }
@@ -126,6 +138,7 @@
     font-size: large;
     font-weight: bold;
     padding: 0;
+    font-family: 'Poppins';
     margin: 0;
 }
 
@@ -136,19 +149,28 @@
 
 .texto1educacionvirtual{
 
-    font-size: 30px;
+    
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
     text-align: center;
     
 }
 
 .texto2educacionvirtual{
 
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FF8C00;
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
     text-align: center;
+    color: #FF8C00;
+
+    
     
 }
 
@@ -159,4 +181,52 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
+}
+
+.beneficiosyventajasdiv{
+    background-color: #D9D9D9;
+    padding: 20px;
+}
+.titlebenyvent {
+    font-size: 30px;
+    color: black;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.titlebenyvent2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.containerbenven{
+
+    margin: 5px;
+
+}
+
+.nosotros{
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #000000;
+
 }
