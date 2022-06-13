@@ -5,7 +5,7 @@ import Card from '../components/Card';
 import style from './index.module.css'
 import { data } from '../utils/data';
 import FloatingWhatsApp from 'react-floating-whatsapp'
-import Testomony from './../components/Testimony';
+import TestomonyCard from '../components/TestimonyCard';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
 import icon_18_años from '../assets/18_años_de_experiencia.svg';
@@ -28,6 +28,9 @@ import preescolarImage from '../assets/Preescolar.png';
 import adultosImage from '../assets/Adultos.png';
 
 
+import CarouselComponent from '../components/CarouselComponent';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
 
 export default function Index() {
@@ -35,9 +38,9 @@ export default function Index() {
     <>
       <Head>
         <title>Skolmi</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet" />
       </Head>
       <Layout>
         <FloatingWhatsApp
@@ -75,7 +78,7 @@ export default function Index() {
               <div className="row">
                 <div className="col-sm">
                   <div className={style.image} >
-                    <Image src={icon_18_años} width="100px" height='100px'/>
+                    <Image src={icon_18_años} width="100px" height='100px' />
                   </div>
                   <p className={style.number}>18</p>
                   <p className={style.texto}>años de <br></br> experiencia</p>
@@ -83,7 +86,7 @@ export default function Index() {
 
                 <div className="col-sm">
                   <div className={style.image} >
-                    <Image src={icon_90_profesionales} width="100px" height='100px'/>
+                    <Image src={icon_90_profesionales} width="100px" height='100px' />
                   </div>
                   <p className={style.number}>90+</p>
                   <p className={style.texto}>Profesionales <br></br> en educación</p>
@@ -91,7 +94,7 @@ export default function Index() {
 
                 <div className="col-sm">
                   <div className={style.image} >
-                    <Image src={icon_2500_estudiantes} width="100px" height='100px'/>
+                    <Image src={icon_2500_estudiantes} width="100px" height='100px' />
                   </div>
                   <p className={style.number}>2500+</p>
                   <p className={style.texto}>Estudiantes <br></br>graduados</p>
@@ -107,7 +110,7 @@ export default function Index() {
             <h2 className={style.texto2educacionvirtual}>Educación Virtual</h2>
           </div>
           <div className='d-flex justify-content-center flex-wrap'>
-            <Image src={primariaImage}/>
+            <Image src={primariaImage} />
           </div>
         </section>
 
@@ -117,99 +120,93 @@ export default function Index() {
             <h4 className={style.titlebenyvent2}>¿Por que escogernos?</h4>
           </div>
           <div className={style.paragraph_containerventajas}>
-          <div  className='container'>
-          <div className='row'>
-            <div className='col'>
-            
-            <div className={style.image} >
-                    <Image src={tiempolibre} width="100px" height='100px'/>
+            <div className='container'>
+              <div className='row'>
+                <div className='col'>
+
+                  <div className={style.image} >
+                    <Image src={tiempolibre} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Más tiempo libre <br></br> para otras actividades</p>
-                  
-            </div>
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={flexibilidad} width="100px" height='100px'/>
+
+                </div>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={flexibilidad} width="100px" height='100px' />
                   </div>
-                  <p className={style.texto}>Componente <br></br> de flexibilidad</p>          
-            </div>
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={auladeaprendizaje} width="100px" height='100px'/>
+                  <p className={style.texto}>Componente <br></br> de flexibilidad</p>
+                </div>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={auladeaprendizaje} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Aulas de aprendizaje interactivas</p>
-            </div>
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={objetosvirtuales} width="100px" height='100px'/>
+                </div>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={objetosvirtuales} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Más de 800 objetos virtuales de aprendizaje</p>
-            </div>
+                </div>
 
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={psicologia} width="100px" height='100px'/>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={psicologia} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Orientación  <br></br>psicologica</p>
-            </div>
+                </div>
 
-          </div>
-          </div>
+              </div>
+            </div>
           </div>
           <div className={style.paragraph_containerventajas}>
-          <div className='container'>
-          <div className='row'>
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={Metodologiadidactica} width="100px" height='100px'/>
+            <div className='container'>
+              <div className='row'>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={Metodologiadidactica} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Metodología <br></br>didáctica</p>
-            </div>
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={Orientacionvocacional} width="100px" height='100px'/>
+                </div>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={Orientacionvocacional} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Clases de orientación <br></br>vocacional</p>
-            </div>
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={premiosconcurso} width="100px" height='100px'/>
+                </div>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={premiosconcurso} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Concursos, ferias <br></br>y actividades</p>
-            </div>
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={certificados} width="100px" height='100px'/>
+                </div>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={certificados} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Diplomas <br></br>y certificados</p>
-            </div>
+                </div>
 
-            <div className='col'>
-            <div className={style.image} >
-                    <Image src={libertad} width="100px" height='100px'/>
+                <div className='col'>
+                  <div className={style.image} >
+                    <Image src={libertad} width="100px" height='100px' />
                   </div>
                   <p className={style.texto}>Libertad de <br></br>pensamiento y desarrollo.</p>
+                </div>
+
+              </div>
+
             </div>
-            
-          </div>
-          
-          </div>
           </div>
         </section>
-
-
         <section className={`${style.testimony} `}>
-          <div
-            className={`${style.container} ${style.title}`}
-            id
-          >
+          <div className={`${style.container} ${style.title}`} id>
             <h2 className={style.textotestimonio}>Testimonios</h2>
             <span>Quienes ya confian en Skolmi</span>
           </div>
-          <Testomony />
-          <Testomony />
-          <Testomony />
+          <CarouselComponent/>
         </section>
+
         <div className={style.img_container}>
           <BannerEndPage />
           <div className={style.form_container}>
