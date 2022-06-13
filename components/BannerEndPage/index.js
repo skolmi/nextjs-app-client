@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bannerImage from "../../public/Banner-Home-End.png"
+import bannerImage from "../../assets/Banner-Home-End.png"
 import style from './style.module.css'
 
 export default function BannerEndPage() {

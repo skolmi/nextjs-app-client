@@ -1,4 +1,4 @@
-import logo from './../../public/skolmilogo1.png';
+import logo from './../../assets/skolmilogo1.png';
 import Image from 'next/image';
 import style from './Logo.module.css';
 
