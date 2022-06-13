@@ -10,6 +10,8 @@ import style from './style.module.css'
 
 import emailjs from '@emailjs/browser'
 
+import ModalAndButton from "../ModalAndButton";
+
 
 export default function FormContact() {
     const [name, setName] = useState('');
@@ -77,18 +79,7 @@ export default function FormContact() {
                     <option>Bachillerato</option>
                     <option>Adultos</option>
                 </Select>
-                <Button
-                    type="submit"
-                    mt={10}
-                    width="100%"
-                    bg='#00194A'
-                    color='white'
-                    fontSize='20px'
-                    padding={'20px'}
-                    _hover={'#00194A'}
-                >
-                    ¡ Listo !
-                </Button>
+                <ModalAndButton/>
             </form>
         </div>
     );

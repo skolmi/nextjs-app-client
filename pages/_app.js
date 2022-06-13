@@ -13,10 +13,4 @@ export default function MyApp({ Component, pageProps }) {
             <Component{...pageProps}/>,
         </ChakraProvider>
     )
-
-    // return getLayout(
-    // <Component {...pageProps} 
-        
-    // />
-    //)
 }
