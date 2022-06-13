@@ -1,5 +1,5 @@
 import style from "./LinkBar.module.css";
-import platformAccessButton from '../../public/boton_acceso_plataforma.svg'
+import platformAccessButton from '../../assets/boton_acceso_plataforma.svg'
 import Image from "next/image";
 
 

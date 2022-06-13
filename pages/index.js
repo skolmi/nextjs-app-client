@@ -1,11 +1,8 @@
 import Layout from '../components/layout';
-import mainImage from "./../public/banner_principal.png";
+import mainImage from "./../assets/banner_principal.png";
 import Image from 'next/image';
-import Card from '../components/Card';
 import style from './index.module.css'
-import { data } from '../utils/data';
 import FloatingWhatsApp from 'react-floating-whatsapp'
-import TestomonyCard from '../components/TestimonyCard';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
 import icon_18_años from '../assets/18_años_de_experiencia.svg';
@@ -23,17 +20,28 @@ import certificados from '../assets/Certificados.svg';
 import libertad from '../assets/Libertad.svg';
 import Head from 'next/head'
 import primariaImage from '../assets/Primaria.png';
-import bachilleratoImage from '../assets/Bachillerato.png';
-import preescolarImage from '../assets/Preescolar.png';
-import adultosImage from '../assets/Adultos.png';
-
-
 import CarouselComponent from '../components/CarouselComponent';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import ModalAndButton from '../components/Modal';
+
+import React from 'react';
+
+// Modal component
+// import {
+//   Modal,
+//   ModalOverlay,
+//   ModalContent,
+//   ModalHeader,
+//   ModalFooter,
+//   ModalBody,
+//   ModalCloseButton,
+//   Button,
+//   Lorem
+// } from '@chakra-ui/react'
+// import { useDisclosure } from '@chakra-ui/react'
 
 
 export default function Index() {
+  // const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <>
       <Head>
@@ -206,6 +214,29 @@ export default function Index() {
           </div>
           <CarouselComponent/>
         </section>
+        {/* <ModalAndButton/> */}
+      
+
+      {/* <Button onClick={onOpen}>Open Modal</Button>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Modal Title</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Lorem count={2} />
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Close
+            </Button>
+            <Button variant='ghost'>Secondary Action</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal> */}
+
+
 
         <div className={style.img_container}>
           <BannerEndPage />
@@ -216,4 +247,5 @@ export default function Index() {
       </Layout>
     </>
   )
+  // document.getElementById('root')
 }

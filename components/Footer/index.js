@@ -5,7 +5,7 @@ import iconyoutube from './../../assets/youtube.svg';
 import iconfacebook from './../../assets/facebook.svg';
 import iconinstagram from './../../assets/instagram.svg';
 import iconwhatsaap from './../../assets/whatsapp.svg';
-import logoIso from './../../public/iconiso.png';
+import logoIso from './../../assets/iconiso.png';
 
 import {
     Box,
