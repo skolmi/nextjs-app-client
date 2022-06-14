@@ -2,6 +2,9 @@ import {
     Input,
     Select,
     Button,
+    FormHelperText,
+    FormErrorMessage,
+    FormControl
 } from "@chakra-ui/react";
 
 import { useState, useRef } from "react";
@@ -17,14 +20,26 @@ export default function FormContact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [option, setOption] = useState('');
+    const [option, setOption] = useState(''); 
+
+    const [input, setInput] = useState('')
+    const isError = input === ''
 
     const form = useRef();
+
+    const sendEmail = () => {
+        emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            })
+    }
 
     return (
         <div className={style.form_container}>
             <p>¡Queremos ayudarte!</p>
-            <form
+            <form isRequired 
                 ref={form}
                 onSubmit={(e) => {
                     e.preventDefault();
