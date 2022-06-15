@@ -16,3 +16,9 @@
     font-size: 1.8rem;
     font-weight: 600;
 }
+
+@media(max-width: 768px) {
+    .form_container {
+        max-width: 425px;
+    }
+}

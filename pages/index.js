@@ -42,7 +42,6 @@ export default function Index() {
           allowClickAway
           notification
           notificationDelay={60000} // 1 minute
-          notificationSound
           chatMessage=' ¡ Estamos para ayudarte !, te responderemos en el menor tiempo posible'
           className={style.floating_Whatsapp}
         />
