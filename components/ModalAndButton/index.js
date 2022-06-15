@@ -9,9 +9,9 @@ import Image from "next/image";
 
 import { FcOk } from 'react-icons/fc'
 
-export default function ModalAndButton() {
+export default function ModalAndButton(props) {
     const [showModal, setShowModal] = useState(false);
-
+    const isError = props.isError;
     return (
         <div>
             <Button
@@ -28,7 +28,7 @@ export default function ModalAndButton() {
                 ¡ Listo !
             </Button>
 
-            {showModal ? (
+            {showModal && !isError ? (
                 <div className={`${style.modal}`}>
                     <div className={style.image}>
                         <FcOk/>
@@ -38,12 +38,12 @@ export default function ModalAndButton() {
                     <Button
                         onClick={() => setShowModal(false)}
                         type="submit"
-                        mt={10}
+                        mt={8}
                         width="50%"
                         bg='#00194A'
                         color='white'
                         fontSize='20px'
-                        padding={'20px'}
+                        padding={'10px'}
                         _hover={'#00194A'}
                     >
                         Cerrar
