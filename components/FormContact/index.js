@@ -20,72 +20,73 @@ export default function FormContact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [option, setOption] = useState(''); 
-
-    const [input, setInput] = useState('')
-    const isError = input === ''
+    const [option, setOption] = useState('');
+    const [isError, setIsError] = useState(false);
+    // const [isEmpty, setIsEmpty] = useState(true);
 
     const form = useRef();
-
-    const sendEmail = () => {
-        emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            })
-    }
 
     return (
         <div className={style.form_container}>
             <p>¡Queremos ayudarte!</p>
-            <form isRequired 
+            <form
                 ref={form}
                 onSubmit={(e) => {
                     e.preventDefault();
-                    // use emailjs to send email
-                    emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
-                        .then((result) => {
-                            console.log(result.text);
-                        }, (error) => {
-                            console.log(error.text);
-                        })
+                    // verifying that all form fields have values
+                    if (name === '' || email === '' || phone === '' || option === '') {
+                        setIsError(true);
+                    } else {
+                        setIsError(false);
+                        // use emailjs to send email
+                        emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
+                            .then((result) => {
+                                console.log(result.text);
+                            }, (error) => {
+                                console.log(error.text);
+                            })
+                    }
                 }}
             >
                 <Input
-                    borderRadius={'10px'} 
-                    h='40px' fontSize='20px' 
-                    mt={8} 
-                    mb={4} 
-                    name='name' 
+                    isInvalid={!name && isError}
+                    errorBorderColor='red.300'
+                    borderRadius={'10px'}
+                    h='40px' fontSize='20px'
+                    mt={8}
+                    mb={4}
+                    name='name'
                     placeholder='Tu nombre'
                     onChange={(e) => setName(e.target.value)}
                 />
-                <Input 
-                    borderRadius={'10px'} 
-                    h='40px' 
-                    fontSize='20px' 
-                    mb={4} 
-                    name='phone' 
+                <Input
+                    isInvalid={!phone && isError}
+                    borderRadius={'10px'}
+                    h='40px'
+                    fontSize='20px'
+                    mb={4}
+                    name='phone'
                     placeholder='Telefono'
                     onChange={(e) => setPhone(e.target.value)}
                 />
-                <Input 
-                    borderRadius={'10px'} 
-                    h='40px' 
-                    fontSize='20px' 
-                    mb={4} 
-                    name='email' 
+                <Input
+                    isInvalid={!email && isError}
+                    borderRadius={'10px'}
+                    h='40px'
+                    fontSize='20px'
+                    mb={4}
+                    name='email'
                     type='email'
                     placeholder='Correo electronico'
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <Select 
-                    borderRadius={'10px'} 
-                    h='40px' 
-                    fontSize='20px' 
-                    mb={4} 
-                    name='options' 
+                <Select
+                    isInvalid={!option && isError}
+                    borderRadius={'10px'}
+                    h='40px'
+                    fontSize='20px'
+                    mb={4}
+                    name='options'
                     placeholder='Programa interesado'
                     onChange={(e) => setOption(e.target.value)}
                 >
@@ -94,7 +95,8 @@ export default function FormContact() {
                     <option>Bachillerato</option>
                     <option>Adultos</option>
                 </Select>
-                <ModalAndButton/>
+                {isError ? <span className={style.errorMessage}>Todos los campos son obligatorios</span>: null}
+                <ModalAndButton isError={isError} />
             </form>
         </div>
     );

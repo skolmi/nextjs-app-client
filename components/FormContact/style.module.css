@@ -10,3 +10,9 @@
 .form_container p {
     text-align: center;
 }
+
+.errorMessage {
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
