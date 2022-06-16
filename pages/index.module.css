@@ -231,8 +231,26 @@
 
 }
 
-/*mediaquery for mobile*/
-@media (max-width: 768px) {
+
+
+/*responsive media, mobile, tablet and desktop*/
+@media (max-width: 425px) {
+    /* .container {
+        padding: var(--layout-padding);
+        margin: 5%;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container h1 {
+        padding: var(--layout-padding);
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        font-size: 3rem;
+        font-family: 'Poppins';
+    }  */
+
     .img_container .form_container {
         position: relative;
         top: 0%;
@@ -241,3 +259,16 @@
         -ms-transform: initial;
     }
 }
+
+/* @media (max-width: 768px) {
+
+    .img_container .form_container {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: initial;
+        -ms-transform: initial;
+    }
+} */
+
+

@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 import mainImage from "./../assets/banner_principal.png";
 import Image from 'next/image';
 import style from './index.module.css'
-import FloatingWhatsApp from 'react-floating-whatsapp'
+import FloatingWhatsApp from 'react-floating-whatsapp';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
 import icon_18_años from '../assets/18_años_de_experiencia.svg';
