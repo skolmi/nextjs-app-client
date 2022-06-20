@@ -13,7 +13,7 @@ export default function LinkBar() {
             </div>
             <form>
                 <ul>
-                    <li>
+                    <li >
                         <a href="/payments">Pagos</a>
                     </li>
                     <li>
