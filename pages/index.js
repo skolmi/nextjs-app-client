@@ -4,7 +4,7 @@ import Image from 'next/image';
 import style from './index.module.css'
 import { data } from '../utils/data';
 import FloatingWhatsApp from 'react-floating-whatsapp'
-import Testomony from './../components/Testimony';
+import Testomony from './../components/TestimonyCard';
 import EducationOnl from './../components/EducationOnline';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
