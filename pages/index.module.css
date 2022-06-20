@@ -39,8 +39,9 @@
     padding: var(--layout-padding);
     text-align: center;
     color: black;
-    font-weight: 600;
-    font-size: 3rem;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 40px;
     font-family: 'Poppins';
 
 }
@@ -116,11 +117,11 @@
 
 .number {
 
-    font-weight: bold;
+    font-weight: 800;
     font-size: 60px;
     color: #007B77;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
 }
 
 .image {
@@ -135,9 +136,10 @@
 
 .texto {
     text-align: center;
-    font-size: large;
+    font-size: 21px;
     font-weight: bold;
     padding: 0;
+
     font-family: 'Poppins';
     margin: 0;
 }
@@ -175,6 +177,15 @@
 }
 
 .testimony {
+    background-color: #00194A;
+    min-height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.EducationOnline {
     background-color: #00194A;
     min-height: 50rem;
     display: flex;

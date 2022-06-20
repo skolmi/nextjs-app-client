@@ -2,7 +2,10 @@ import Layout from '../components/layout';
 import mainImage from "./../assets/banner_principal.png";
 import Image from 'next/image';
 import style from './index.module.css'
-import FloatingWhatsApp from 'react-floating-whatsapp';
+import { data } from '../utils/data';
+import FloatingWhatsApp from 'react-floating-whatsapp'
+import Testomony from './../components/TestimonyCard';
+import EducationOnl from './../components/EducationOnline';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
 import icon_18_años from '../assets/18_años_de_experiencia.svg';
@@ -100,10 +103,9 @@ export default function Index() {
           <div className={style.educacionvirtual}>
             <h1 className={style.texto1educacionvirtual}>Programas</h1>
             <h2 className={style.texto2educacionvirtual}>Educación Virtual</h2>
+          
           </div>
-          <div className='d-flex justify-content-center flex-wrap'>
-            <Image src={primariaImage} />
-          </div>
+          <EducationOnl/>
         </section>
 
         <section>

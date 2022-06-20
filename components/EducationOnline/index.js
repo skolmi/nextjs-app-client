@@ -53,9 +53,10 @@ export default function EducationOnl(){
                     <Heading className={style.textHead} color={'#007B77'} > Primaria </Heading>
                     </Stack>
 
-                    <Stack spacing={0} align={'center'} m={9} >
+                    <Stack spacing={0} align={'center'} m={5} >
                         <Text className={style.text}>Metodología afectiva para que tus se diviertan mientras aprenden.
 ¡Estudiar no debe ser aburrido!</Text>
+<Text> <br></br></Text>
                     </Stack>
                     <Stack  align={'center'}>
                       <Button  background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>Conoce Más</Button>
@@ -75,7 +76,7 @@ export default function EducationOnl(){
                     <Heading className={style.textHead} color={'#00194A'} > Bachillerato </Heading>
                     </Stack>
 
-                    <Stack spacing={0} align={'center'} m={7} >
+                    <Stack spacing={0} align={'center'} m={5} >
                         <Text className={style.text}>Brindamos una educación inclusiva y afectiva con un toque de flexibilidad, ¡Disfruta de tu bachillerato en Skolmi!</Text>
                     </Stack>
                     <Stack  align={'center'}>
