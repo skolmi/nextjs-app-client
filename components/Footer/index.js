@@ -61,7 +61,7 @@ export default function Footer() {
 
                >
             <Image src={LogoSkolmiWhite}   alt='footer'></Image>
-            <Text fontSize={17}
+            <Text fontSize={15}
                  padding={'5px'}
                  margin={'5px'}>© 2022 Skolmi S.A Todos  <br></br> los derechos reservados</Text>                               
             
@@ -76,8 +76,8 @@ export default function Footer() {
           
             
             >
-            <Stack  fontSize={20} direction={'column'} spacing={6}>
-                    <Link href={'#'}>Nosotros</Link>
+            <Stack  fontSize={15} direction={'column'} spacing={6}>
+                    <Link href={'#'} fontWeight={600}>Nosotros</Link>
                     <Link href={'#'}>Escuelas de padres</Link>
                     <Link href={'#'}>¿Quiénes Somos?</Link>
                     <Link href={'#'}>Certificación</Link>
@@ -89,8 +89,8 @@ export default function Footer() {
           margin={'10px'}
          spacing={6}
          as={Stack} >
-         <Stack direction={'column'} fontSize={20} spacing={6}>
-                 <Link href={'#'}>¿Preguntas?</Link>
+         <Stack direction={'column'}  fontSize={15} spacing={6}>
+                 <Link href={'#'} fontWeight={600}>¿Preguntas?</Link>
                  <Link href={'#'}>Preguntas <br></br> frecuentes</Link>                
              </Stack>
          </Container>
@@ -104,20 +104,20 @@ export default function Footer() {
               
             
                     >
-            <Text fontSize={20}>Contactanós</Text>      
+            <Text fontSize={15} fontWeight={600}>Contactanós</Text>      
                     <Stack direction={'row'} spacing={-5} py={'5'} >
                      <Container>
-                    <Image src={iconfacebook}   alt='footer'></Image>                    
+                    <a href='https://www.facebook.com/SkolmiGlobal'><Image src={iconfacebook}   alt='footer'></Image> </a>
 
                     </Container>   
                     <Container>
-                    <Image src={iconyoutube}  alt='footer'></Image>
+                    <a href='https://www.youtube.com/c/SkolmiGlobal/'><Image src={iconyoutube}  alt='footer'></Image></a> 
                     </Container>
                     <Container>
-                    <Image src={iconinstagram}  alt='footer'></Image>
+                    <a href='https://www.instagram.com/skolmiglobal/'><Image src={iconinstagram}  alt='footer'></Image></a>
                     </Container>
                     <Container>
-                    <Image src={iconwhatsaap}  alt='footer'></Image>
+                    <a href='https://api.whatsapp.com/send?phone=573023881611'><Image src={iconwhatsaap}  alt='footer'></Image></a>
                     </Container>
              
                     </Stack>
