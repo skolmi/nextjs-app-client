@@ -21,8 +21,7 @@ export default function EducationOnl(){
 <Center py={6} >
             <Box
                 margin={'10px'}
-                maxW={'250px'}
-                        
+                maxW={'250px'}                        
                 bg={useColorModeValue('white', 'gray.800')}
                 boxShadow={'2xl'}
                 borderRadius={'lg'}                
@@ -30,7 +29,7 @@ export default function EducationOnl(){
                 <Image src={Preescolar}   alt='footer'></Image>            
                 <Box p={6} >
                     <Stack spacing={0} align={'center'} mb={5}>
-                    <Heading fontSize={'25px'}  fontFamily={'Poppins'} color={'#6639A5'} > Preescolar </Heading>
+                    <Heading className={style.textHead} color={'#6639A5'}> Preescolar </Heading>
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
@@ -51,7 +50,7 @@ export default function EducationOnl(){
                 <Image src={Primaria}   alt='footer'></Image>            
                 <Box p={6} >
                     <Stack spacing={0} align={'center'} mb={5}>
-                    <Heading fontSize={'25px'}  fontFamily={'Poppins'} color={'#007B77'} > Primaria </Heading>
+                    <Heading className={style.textHead} color={'#007B77'} > Primaria </Heading>
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={9} >
@@ -73,7 +72,7 @@ export default function EducationOnl(){
                 <Image src={Bachillerato}   alt='footer'></Image>            
                 <Box p={6} >
                     <Stack spacing={0} align={'center'} mb={5}>
-                    <Heading fontSize={'25px'}  fontFamily={'Poppins'} color={'#00194A'} > Bachillerato </Heading>
+                    <Heading className={style.textHead} color={'#00194A'} > Bachillerato </Heading>
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={7} >
@@ -94,7 +93,7 @@ export default function EducationOnl(){
                 <Image src={Adultos}   alt='footer'></Image>            
                 <Box p={6} >
                     <Stack spacing={0} align={'center'} mb={5}>
-                    <Heading fontSize={'25px'}  fontFamily={'Poppins'} color={'#FF8C00'} > Adultos </Heading>
+                    <Heading className={style.textHead} color={'#FF8C00'} > Adultos </Heading>
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
