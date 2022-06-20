@@ -5,7 +5,10 @@ import iconyoutube from './../../assets/youtube.svg';
 import iconfacebook from './../../assets/facebook.svg';
 import iconinstagram from './../../assets/instagram.svg';
 import iconwhatsaap from './../../assets/whatsapp.svg';
-import logoIso from './../../public/iconiso.png';
+import logoIso from './../../assets/iconiso.png';
+
+import style from './style.module.css';
+
 
 import {
     Box,
@@ -30,8 +33,8 @@ const SocialButton = ({
             bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
             rounded={'full'}
             w={8}
-            h={8}            
-            cursor={'pointer'}            
+            h={8}
+            cursor={'pointer'}
             href={href}
             display={'inline-flex'}
             alignItems={'center'}
@@ -118,17 +121,17 @@ export default function Footer() {
                     </Container>
                     <Container>
                     <a href='https://api.whatsapp.com/send?phone=573023881611'><Image src={iconwhatsaap}  alt='footer'></Image></a>
+
                     </Container>
-             
-                    </Stack>
+
                 </Container>
-                </Container>
+
                 <Container className='col' direction={'row'} maxW={'90ch'}>
-                <Image src={logoIso} width={'120%'}  height={'85%'} alt='footer'></Image>     
+                    <Image src={logoIso} width={'120%'} height={'85%'} alt='footer'></Image>
                 </Container>
-               
-               
             </Box>
-      
+        </footer>
+
+
     );
 }

@@ -86,10 +86,10 @@
     text-decoration: none;
 }
 
-.border_gradient{
-    
+.border_gradient {
+
     border-radius: 10px;
- /*   background-image: linear-gradient(white, white), radial-gradient(circle at top left, #34ddff,#d53a9d);*/
+    /*   background-image: linear-gradient(white, white), radial-gradient(circle at top left, #34ddff,#d53a9d);*/
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -112,21 +112,21 @@
 }
 
 .floating_Whatsapp {
-    z-index: 999;
+    z-index: 1;
 }
 
-.number{
+.number {
 
     font-weight: 800;
     font-size: 60px;
-    color:  #007B77;
+    color: #007B77;
     text-align: center;
     font-family: 'Montserrat';
 }
 
-.image{
+.image {
 
-    
+
     color: #0B0B61;
     display: flex;
     padding: 10px;
@@ -134,7 +134,7 @@
 
 }
 
-.texto{
+.texto {
     text-align: center;
     font-size: 21px;
     font-weight: bold;
@@ -144,14 +144,14 @@
     margin: 0;
 }
 
-.educacionvirtual{
+.educacionvirtual {
     background-color: #0B0B61;
     padding: 20px;
 }
 
-.texto1educacionvirtual{
+.texto1educacionvirtual {
 
-    
+
     color: white;
     font-family: 'Poppins';
     font-size: 50px;
@@ -159,10 +159,10 @@
     line-height: 60px;
     letter-spacing: 0em;
     text-align: center;
-    
+
 }
 
-.texto2educacionvirtual{
+.texto2educacionvirtual {
 
     font-family: 'Poppins';
     font-size: 25px;
@@ -172,8 +172,8 @@
     text-align: center;
     color: #FF8C00;
 
-    
-    
+
+
 }
 
 .testimony {
@@ -184,6 +184,7 @@
     flex-wrap: wrap;
     padding: 20px;
 }
+
 .EducationOnline {
     background-color: #00194A;
     min-height: 50rem;
@@ -192,10 +193,12 @@
     flex-wrap: wrap;
     padding: 20px;
 }
-.beneficiosyventajasdiv{
+
+.beneficiosyventajasdiv {
     background-color: #D9D9D9;
     padding: 20px;
 }
+
 .titlebenyvent {
     font-size: 30px;
     color: black;
@@ -221,21 +224,39 @@
 
 }
 
-.containerbenven{
+.containerbenven {
 
     margin: 5px;
 
 }
 
-.nosotros{
-    
+.nosotros {
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     text-align: center;
-    
+
     color: #000000;
 
+}
+
+
+
+/*responsive media, mobile, tablet and desktop*/
+@media (max-width: 1000px) {
+    .img_container .form_container {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        transform: initial;
+        -ms-transform: initial;
+    }
+
+    .form_container {
+        display: flex;
+        justify-content: center;
+    }
 }

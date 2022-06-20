@@ -13,7 +13,7 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 
-export default function Testimony() {
+export default function TestimonyCard() {
     return (
         <Center py={6}>
             <Box
@@ -21,22 +21,20 @@ export default function Testimony() {
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.800')}
                 boxShadow={'2xl'}
-                // rounded={'md'}
-                // className={style.roundedCard}
                 overflow={'Visible'}
                 borderRadius={'lg'}
                 className={`${style.card} ${style.roundedCard}`}
             >
                 <Flex justify={'center'} mt={-70}  >
                     <Image
-                        boxSize={'136px'}
+                        boxSize={'136px !important'}
                         src={
                             'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'
                         }
                         borderRadius='full'
                         alt={'Author'}
                         css={{
-                            border: '7px solid #00194A',
+                            border: '7px solid #00194A !important',
                         }}
                     />
                 </Flex>

@@ -10,3 +10,16 @@
 .form_container p {
     text-align: center;
 }
+
+.errorMessage {
+    color: red;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+@media(max-width: 1000px) {
+    .form_container {
+        max-width: 425px;
+        box-shadow: 20px 20px 60px #bebebe;
+    }
+}
