@@ -182,7 +182,14 @@
     flex-wrap: wrap;
     padding: 20px;
 }
-
+.EducationOnline {
+    background-color: #00194A;
+    min-height: 50rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
 .beneficiosyventajasdiv{
     background-color: #D9D9D9;
     padding: 20px;

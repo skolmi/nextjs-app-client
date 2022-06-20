@@ -1,0 +1,16 @@
+.roundedCard {
+    border-radius: 30px !important;
+}
+.card {
+    margin: 20px;
+}
+
+.bold{
+    font-weight: 'bold'
+}
+
+.text{
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+}

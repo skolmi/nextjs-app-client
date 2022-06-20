@@ -1,6 +1,6 @@
 import Logo from '../Logo';
 import Image from 'next/image';
-import LogoSkolmiWhite from './../../assets/Skolmi.png'
+import LogoSkolmiWhite from './../../assets/Skolmi.png';
 import iconyoutube from './../../assets/youtube.svg';
 import iconfacebook from './../../assets/facebook.svg';
 import iconinstagram from './../../assets/instagram.svg';
