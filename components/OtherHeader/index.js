@@ -259,7 +259,7 @@ const NAV_ITEMS = [
     },
     {
         label: 'Bienestar estudiantil',
-        href: '#',
+        href: '/wellness',
     },
     {
         label: 'FAQ',
