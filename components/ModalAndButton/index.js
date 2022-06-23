@@ -5,7 +5,6 @@ import {
     Text  
 } from "@chakra-ui/react";
 
-import Image from "next/image";
 
 import { FcOk } from 'react-icons/fc'
 

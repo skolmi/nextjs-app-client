@@ -243,9 +243,24 @@
 
 }
 
+.carouselItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+
 
 
 /*responsive media, mobile, tablet and desktop*/
+@media(max-width: 768px) {
+    .carouselContainer {
+        max-width: 320px;
+    }
+}
 @media (max-width: 1000px) {
     .img_container .form_container {
         position: relative;

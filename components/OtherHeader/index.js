@@ -217,21 +217,9 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
 
-    {
-        label: 'Nosotros',
-        // children: [
-        // {
-        //     label: 'Explore Design Work',
-        //     subLabel: 'Trending Design to inspire you',
-        //     href: '#',
-        // },
-        // {
-        //     label: 'New & Noteworthy',
-        //     subLabel: 'Up-and-coming Designers',
-        //     href: '#',
-        // },
-        //],
-    },
+    // {
+    //     label: 'Nosotros',
+    // },
     {
         label: 'Oferta educativa',
         children: [
@@ -261,12 +249,12 @@ const NAV_ITEMS = [
         label: 'Bienestar estudiantil',
         href: '/wellness',
     },
-    {
-        label: 'FAQ',
-        href: '#',
-    },
-    {
-        label: 'Pagos',
-        href: '/payments',
-    },
+    // {
+    //     label: 'FAQ',
+    //     href: '#',
+    // },
+    // {
+    //     label: 'Pagos',
+    //     href: '/payments',
+    // },
 ];

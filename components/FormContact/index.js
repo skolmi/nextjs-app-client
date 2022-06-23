@@ -22,7 +22,6 @@ export default function FormContact() {
     const [phone, setPhone] = useState('');
     const [option, setOption] = useState('');
     const [isError, setIsError] = useState(false);
-    // const [isEmpty, setIsEmpty] = useState(true);
 
     const form = useRef();
 
