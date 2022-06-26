@@ -219,6 +219,7 @@ const NAV_ITEMS = [
 
     {
         label: 'Nosotros',
+        href: '/Nosotros',
         // children: [
         // {
         //     label: 'Explore Design Work',
