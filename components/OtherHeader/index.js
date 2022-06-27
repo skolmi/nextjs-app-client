@@ -233,7 +233,7 @@ const NAV_ITEMS = [
         // },
         //],
     },
- main
+ 
     {
         label: 'Oferta educativa',
         children: [
