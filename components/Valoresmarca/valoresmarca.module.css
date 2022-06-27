@@ -1,0 +1,31 @@
+.roundedCard {
+    border-radius: 60px;
+}
+.card {
+    margin: 30px;
+}
+
+.bold{
+    font-weight: 'bold'
+}
+
+.text{
+    font-size: 17px;
+    color: #000000;
+    text-align: center;
+}
+
+.textHead {
+   color:#FF8A00;
+    font-size: 25px;
+    font-family: 'Poppins';    
+}
+
+.imageicon{
+    height: 136px;
+    width: 136px;
+    left: 144px;
+    top: 1153px;
+    border-radius: 0px;
+    
+}
