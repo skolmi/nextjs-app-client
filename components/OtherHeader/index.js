@@ -233,6 +233,7 @@ const NAV_ITEMS = [
         // },
         //],
     },
+ main
     {
         label: 'Oferta educativa',
         children: [
@@ -260,14 +261,14 @@ const NAV_ITEMS = [
     },
     {
         label: 'Bienestar estudiantil',
-        href: '#',
+        href: '/wellness',
     },
-    {
-        label: 'FAQ',
-        href: '#',
-    },
-    {
-        label: 'Pagos',
-        href: '/payments',
-    },
+    // {
+    //     label: 'FAQ',
+    //     href: '#',
+    // },
+    // {
+    //     label: 'Pagos',
+    //     href: '/payments',
+    // },
 ];

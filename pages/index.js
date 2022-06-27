@@ -2,9 +2,7 @@ import Layout from '../components/layout';
 import mainImage from "./../assets/banner_principal.png";
 import Image from 'next/image';
 import style from './index.module.css'
-import { data } from '../utils/data';
 import FloatingWhatsApp from 'react-floating-whatsapp'
-import Testomony from './../components/TestimonyCard';
 import EducationOnl from './../components/EducationOnline';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
@@ -21,9 +19,9 @@ import Orientacionvocacional from '../assets/Orientacionvocacional.svg';
 import premiosconcurso from '../assets/Premiosconcursos.svg';
 import certificados from '../assets/Certificados.svg';
 import libertad from '../assets/Libertad.svg';
-import primariaImage from '../assets/Primaria.png';
-import CarouselComponent from '../components/CarouselComponent';
-import ModalAndButton from '../components/ModalAndButton';
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import TestimonyCard from "../components/TestimonyCard";
 import Head from 'next/head'
 
 import React from 'react';
@@ -32,12 +30,6 @@ import React from 'react';
 export default function Index() {
   return (
     <>
-      <Head>
-        <title>Skolmi</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet" />
-      </Head>
       <Layout>
         <FloatingWhatsApp
           phoneNumber="+573146853222"
@@ -198,7 +190,25 @@ export default function Index() {
             <h2 className={style.textotestimonio}>Testimonios</h2>
             <span>Quienes ya confian en Skolmi</span>
           </div>
-          <CarouselComponent />
+          <div className={`${style.carouselContainer} `}>
+          <Carousel showStatus={false}>
+              <div className={style.carouselItem}>
+                  <TestimonyCard />
+                  <TestimonyCard />
+                  <TestimonyCard />
+              </div>
+              <div className={style.carouselItem}>
+                  <TestimonyCard />
+                  <TestimonyCard />
+                  <TestimonyCard />
+              </div>
+              <div className={style.carouselItem}>
+                  <TestimonyCard />
+                  <TestimonyCard />
+                  <TestimonyCard />
+              </div>
+          </Carousel>
+        </div>
         </section>
 
         <div className={style.img_container}>

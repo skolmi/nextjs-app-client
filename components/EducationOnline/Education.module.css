@@ -19,6 +19,8 @@
     
     font-size: 25px;
     font-family: 'Poppins';
-    
-    
+}
+
+.container {
+    flex-wrap: wrap;
 }
