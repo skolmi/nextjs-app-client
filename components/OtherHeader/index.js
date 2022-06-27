@@ -217,9 +217,23 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
 
-    // {
-    //     label: 'Nosotros',
-    // },
+    {
+        label: 'Nosotros',
+        href: '/Nosotros',
+        // children: [
+        // {
+        //     label: 'Explore Design Work',
+        //     subLabel: 'Trending Design to inspire you',
+        //     href: '#',
+        // },
+        // {
+        //     label: 'New & Noteworthy',
+        //     subLabel: 'Up-and-coming Designers',
+        //     href: '#',
+        // },
+        //],
+    },
+ main
     {
         label: 'Oferta educativa',
         children: [
