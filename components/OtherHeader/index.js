@@ -225,22 +225,18 @@ const NAV_ITEMS = [
         children: [
             {
                 label: 'Transición',
-                subLabel: 'Find your dream design job',
                 href: '#',
             },
             {
                 label: 'Primaria',
-                subLabel: 'An exclusive list for contract work',
                 href: '#',
             },
             {
                 label: 'Bachillerato',
-                subLabel: 'An exclusive list for contract work',
                 href: '#',
             },
             {
                 label: 'Bachillerato para adultos',
-                subLabel: 'An exclusive list for contract work',
                 href: '#',
             }
         ],
