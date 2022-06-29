@@ -34,11 +34,11 @@ export default function Nosotros(){
             <div className="container">
                 <div className="row">
                     <div className="col-6">
-                        <p className={style.texto}>Misión</p>
+                        <p className={style.textoNosotros}>Misión</p>
                         <p className={style.texto_M}>Somos una plataforma educativa que, a través de la virtualidad del siglo XXI, formamos personas en educación prescolar, básica y media, enfocados en un entorno de amor y buen trato a todas nuestras partes interesadas.</p>
                     </div>
                     <div className="col-6">
-                        <p className={style.texto}>Visión</p>
+                        <p className={style.textoNosotros}>Visión</p>
                         <p className={style.texto_M}>Ser en este lustro la metodología SKOLMI para todos.</p>
                     </div>
                 </div>
