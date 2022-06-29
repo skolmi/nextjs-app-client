@@ -16,6 +16,14 @@ export default function Layout({ children }) {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWD8F53927"></script>
+                <script>
+{`                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'G-NWD8F53927');`}
+                </script>
             </Head>
             <LinkBar />
             <OtherHeader />
