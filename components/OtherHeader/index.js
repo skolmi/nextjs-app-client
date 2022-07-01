@@ -238,7 +238,7 @@ const NAV_ITEMS = [
         label: 'Oferta educativa',
         children: [
             {
-                label: 'Transición',
+                label: 'Preescolar',                
                 href: '#',
             },
             {
@@ -250,7 +250,7 @@ const NAV_ITEMS = [
                 href: '#',
             },
             {
-                label: 'Bachillerato para adultos',
+                label: 'Adultos',
                 href: '#',
             }
         ],
