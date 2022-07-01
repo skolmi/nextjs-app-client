@@ -238,23 +238,19 @@ const NAV_ITEMS = [
         label: 'Oferta educativa',
         children: [
             {
-                label: 'Transición',
-                subLabel: 'Find your dream design job',
+                label: 'Preescolar',                
                 href: '#',
             },
             {
                 label: 'Primaria',
-                subLabel: 'An exclusive list for contract work',
                 href: '#',
             },
             {
                 label: 'Bachillerato',
-                subLabel: 'An exclusive list for contract work',
                 href: '#',
             },
             {
-                label: 'Bachillerato para adultos',
-                subLabel: 'An exclusive list for contract work',
+                label: 'Adultos',
                 href: '#',
             }
         ],
