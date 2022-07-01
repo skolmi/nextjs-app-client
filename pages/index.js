@@ -32,7 +32,7 @@ export default function Index() {
     <>
       <Layout>
         <FloatingWhatsApp
-          phoneNumber="+573146853222"
+          phoneNumber="+573023881611"
           accountName="Skolmi"
           allowClickAway
           notification
