@@ -76,7 +76,7 @@ export default function Nosotros(){
                     </div>
                 <div className="col-9">
                 <div className={style.politicaCalidad2}>
-                <p className={style.texto_2}>Somos una familia educativa que, a través de una modalidad interactiva, dinámica, afectiva con apoyo tecnológicos del siglo XXI, formamos personas en educación preescolar, básica y media para jóvenes y adultos. Además, formamos ciudadanos futuristas, críticos y partícipes de la globalización.
+                <p className={style.texto_E}>Somos una familia educativa que, a través de una modalidad interactiva, dinámica, afectiva con apoyo tecnológicos del siglo XXI, formamos personas en educación preescolar, básica y media para jóvenes y adultos. Además, formamos ciudadanos futuristas, críticos y partícipes de la globalización.
                   Comprometida con la satisfacción de las necesidades y expectativas de nuestros educandos y partes interesadas, el cumplimiento de la normativa al alcance del sistema de la educación virtual.; todo bajo una cultura de afectos, felicidad y mejoramiento continuo del sistema de gestión de calidad. Esta política será publicada a todas las partes interesadas.</p>
                  </div>
                 </div>
@@ -97,7 +97,7 @@ export default function Nosotros(){
             <div className="container">
             <div className={style.Certificacion} >
                 <div className="row">
-                    <div className="col-3">
+                    <div className="col-3" marg>
                         <Image  src={ISO9001Certificado} />
                     </div>            
                     <div className="col-9">
