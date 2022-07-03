@@ -7,15 +7,14 @@ import {
     FormErrorMessage,
     FormControl,
     InputGroup,
-    Stack
+    Stack,
+    color
 } from "@chakra-ui/react";
 
 import { useState, useRef } from "react";
-import { PhoneIcon,EmailIcon,AtSignIcon,TriangleDownIcon } from '@chakra-ui/icons'
-import style from './style.module.css'
-
-import emailjs from '@emailjs/browser'
-
+import { HiUser,HiPhone,HiOutlineMail,HiChevronDown} from "react-icons/hi";
+import style from './style.module.css';
+import emailjs from '@emailjs/browser';
 import ModalAndButton from "../ModalAndButton";
 
 
@@ -51,6 +50,7 @@ export default function FormContact() {
                     }
                 }}
             >
+                
              <Stack spacing={4}>
             <InputGroup>
                 <Input 
@@ -63,13 +63,14 @@ export default function FormContact() {
                     type='tel'
                     mb={4}
                     name='name'
+                    rightic
                     placeholder='Tu nombre'
                     onChange={(e) => setName(e.target.value)}
                 />
-                <InputRightElement  margin={2} paddingRight={10} children={<AtSignIcon color='gray.300' w={7} h={7} />} />
+                <InputRightElement margin={3}  children={  <HiUser size={20}  color={'gray'} /> } />
               </InputGroup>  
               </Stack>
-              <Stack spacing={4}>
+          <Stack spacing={4}>
             <InputGroup>
                 <Input
                     isInvalid={!phone && isError}
@@ -81,7 +82,7 @@ export default function FormContact() {
                     placeholder='Telefono'
                     onChange={(e) => setPhone(e.target.value)}
                 />
-                  <InputRightElement  margin={2} paddingRight={10} children={<PhoneIcon color='gray.300' w={7} h={7} />} />
+                 <InputRightElement margin={3}  children={  <HiPhone size={20}  color={'gray'} /> } />
                 </InputGroup>
                 </Stack>
                 <Stack spacing={4}>
@@ -97,8 +98,8 @@ export default function FormContact() {
                     placeholder='Correo electronico'
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                  <InputRightElement  margin={2} paddingRight={10} children={<EmailIcon color='gray.300' w={7} h={7} />} />
-             </InputGroup>
+                <InputRightElement margin={3}  children={  <HiOutlineMail size={20}  color={'gray'} /> } />
+                </InputGroup>
              </Stack>
                 <Select
                     className={style.SelectContainer}
@@ -106,8 +107,8 @@ export default function FormContact() {
                     borderRadius={'10px'}
                     h='40px'
                     fontSize='20px'
-                    mb={4}                
-                   icon={ <TriangleDownIcon  />}
+                    mb={4}
+                    icon={<HiChevronDown />}           
                     name='options'
                     placeholder='Programa interesado'
                     color={'gray.300'}

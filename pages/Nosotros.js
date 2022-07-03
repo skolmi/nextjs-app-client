@@ -20,8 +20,7 @@ export default function Nosotros(){
         <section className="home_banner_area">
           <div className={style.img_container}>
             <Image src={imageprueba} />
-            <div className={style.form_container}>
-            
+            <div className={style.form_container}>            
             </div>
           </div>
         </section>
@@ -59,7 +58,7 @@ export default function Nosotros(){
                    <div className="container">
                     <div className="row">
                     <div className="col">
-                    <h1 className={style.textpolitica}>Política  </h1>
+                    <h1 className={style.textpolitica}>Política</h1>
                     </div>
                     <div className="col">
                      <h1 className={style.textpolitica3}>de</h1>
@@ -112,6 +111,6 @@ export default function Nosotros(){
         </section>
        </Layout>
        </>
-    )
+    );
 
 }

@@ -3,11 +3,9 @@ import Footer from '../Footer';
 import OtherHeader from '../OtherHeader';
 import LinkBar from '../LinkBar';
 import Head from 'next/head';
-
 import { Box } from '@chakra-ui/react';
 import { useState } from 'react';
-import style from './layout.module.css'
-
+import style from './layout.module.css';
 
 export default function Layout({ children }) {
     // const [showModal, setShowModal] = useState(true);
@@ -21,10 +19,9 @@ export default function Layout({ children }) {
                 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet" />
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWD8F53927"></script>
                 <script>
-{`                    window.dataLayer = window.dataLayer || [];
+                 {`window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-
                     gtag('config', 'G-NWD8F53927');`}
                 </script>
             </Head>

@@ -23,7 +23,7 @@ import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 const SocialButton = ({
     children,
     label,
-    href,
+    href
 }) => {
     return (
         <chakra.button
@@ -38,7 +38,7 @@ const SocialButton = ({
             justifyContent={'center'}
             transition={'background 0.3s ease'}
             _hover={{
-                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
+                bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200')
             }}>
             <VisuallyHidden>{label}</VisuallyHidden>
             {children}
@@ -68,14 +68,11 @@ export default function Footer() {
 
 
                     </Container>
-
                     <Container className='col'
                         padding={'10px'}
                         margin={'10px'}
                         spacing={6}
                         as={Stack}
-
-
                     >
                         <Stack fontSize={15} direction={'column'} spacing={6}>
                             <Link href={'#'} fontWeight={600}>Nosotros</Link>
@@ -95,15 +92,9 @@ export default function Footer() {
                             <Link href={'#'}>Preguntas <br></br> frecuentes</Link>
                         </Stack>
                     </Container>
-
-
-
                     <Container className='col'
-
                         padding={'10px'}
                         margin={'10px'}
-
-
                     >
                         <Text fontSize={15} fontWeight={600}>Contactanós</Text>
                         <Stack direction={'row'} spacing={-5} py={'5'} >

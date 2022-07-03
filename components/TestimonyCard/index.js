@@ -34,7 +34,7 @@ export default function TestimonyCard() {
                         borderRadius='full'
                         alt={'Author'}
                         css={{
-                            border: '7px solid #00194A !important',
+                            border: '7px solid #00194A !important'
                         }}
                     />
                 </Flex>

@@ -78,7 +78,7 @@ export default function EducationOnl(){
                 </Stack>
                 <Box p={6} >
                     <Stack spacing={0} align={'center'} mb={5}>
-                    <Heading className={style.textHead}>Afectividad </Heading>
+                    <Heading className={style.textHead}>Afectividad</Heading>
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
@@ -100,16 +100,14 @@ export default function EducationOnl(){
                 </Stack>
                 <Box p={6} >
                     <Stack spacing={0} align={'center'} mb={5}>
-                    <Heading className={style.textHead}>Creatividad </Heading>
+                    <Heading className={style.textHead}>Creatividad</Heading>
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
                         <Text className={style.text}>Creamos espacios y momentos dinámicos, que impulsan la generación de ideas nuevas, en pro de la adquisición del conocimiento.</Text>
                     </Stack>            
                 </Box>
-            </Box>
- 
-                      
+            </Box>                      
         </Center>
  
     );
