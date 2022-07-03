@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import style from './index.module.css';
 import Image from 'next/image';
-import imageprueba from "./../assets/nosotros.png";
+import nosotros from "./../assets/nosotros.png";
 import React from 'react';
 import Head from "next/head";
 import Valores from './../components/Valoresmarca';
@@ -17,9 +17,9 @@ export default function Nosotros(){
       </Head>
         <Layout>
         
-        <section className="home_banner_area">
+        <section className={style.imgnos}>
           <div className={style.img_container}>
-            <Image src={imageprueba} />
+            <Image src={nosotros} />
             <div className={style.form_container}>            
             </div>
           </div>
