@@ -57,7 +57,7 @@ export default function Footer() {
                         as={Stack}
                         spacing={6}
                         textAlign={'left'}
-                        padding={'20px'}
+                        padding={'10px'}
                         margin={'10px'}
 
                     >
@@ -65,8 +65,6 @@ export default function Footer() {
                         <Text fontSize={15}
                             padding={'5px'}
                             margin={'5px'}>© 2022 Skolmi S.A Todos  <br></br> los derechos reservados</Text>
-
-
                     </Container>
                     <Container className='col'
                         padding={'10px'}
@@ -74,7 +72,7 @@ export default function Footer() {
                         spacing={6}
                         as={Stack}
                     >
-                        <Stack fontSize={15} direction={'column'} spacing={6}>
+                        <Stack fontSize={20} direction={'column'} spacing={6}>
                             <Link href={'#'} fontWeight={600}>Nosotros</Link>
                             <Link href={'#'}>Escuelas de padres</Link>
                             <Link href={'#'}>¿Quiénes Somos?</Link>
@@ -87,7 +85,7 @@ export default function Footer() {
                         margin={'10px'}
                         spacing={6}
                         as={Stack} >
-                        <Stack direction={'column'} fontSize={15} spacing={6}>
+                        <Stack direction={'column'} fontSize={20} spacing={6}>
                             <Link href={'#'} fontWeight={600}>¿Preguntas?</Link>
                             <Link href={'#'}>Preguntas <br></br> frecuentes</Link>
                         </Stack>
@@ -96,7 +94,7 @@ export default function Footer() {
                         padding={'10px'}
                         margin={'10px'}
                     >
-                        <Text fontSize={15} fontWeight={600}>Contactanós</Text>
+                        <Text fontSize={20} textAlign={'center'} fontWeight={600}>Contactanós</Text>
                         <Stack direction={'row'} spacing={-5} py={'5'} >
                             <Container>
                                 <a href='https://www.facebook.com/SkolmiGlobal'><Image src={iconfacebook} alt='footer'></Image> </a>

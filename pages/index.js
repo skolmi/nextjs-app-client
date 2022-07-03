@@ -35,6 +35,7 @@ export default function Index() {
           accountName="Skolmi"
           allowClickAway
           notification
+          
           notificationDelay={60000} // 1 minute
           chatMessage=' ¡ Estamos para ayudarte !, te responderemos en el menor tiempo posible'
           className={style.floating_Whatsapp}
