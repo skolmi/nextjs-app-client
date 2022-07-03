@@ -9,6 +9,9 @@
 }
 .form_container p {
     text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 600;
 }
 
 .errorMessage {

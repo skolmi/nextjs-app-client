@@ -30,8 +30,8 @@ export default function FormContact() {
 
     return (
         <div className={style.form_container}>
-            <p>¡Queremos ayudarte!</p>
-       
+                <p>¡Queremos ayudarte!</p>
+          
             <form
                 ref={form}
                 onSubmit={(e) => {
