@@ -19,6 +19,9 @@
     font-size: 1.8rem;
     font-weight: 600;
 }
+.SelectContainer option{
+    color: black;
+}
 
 @media(max-width: 1000px) {
     .form_container {

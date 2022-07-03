@@ -101,6 +101,7 @@ export default function FormContact() {
              </InputGroup>
              </Stack>
                 <Select
+                    className={style.SelectContainer}
                     isInvalid={!option && isError}
                     borderRadius={'10px'}
                     h='40px'
@@ -109,9 +110,10 @@ export default function FormContact() {
                    icon={ <TriangleDownIcon  />}
                     name='options'
                     placeholder='Programa interesado'
+                    color={'gray.300'}
                     onChange={(e) => setOption(e.target.value)}
                 >
-                    <option>Preescolar</option>
+                    <option >Preescolar</option>
                     <option>Primaria</option>
                     <option>Bachillerato</option>
                     <option>Adultos</option>
