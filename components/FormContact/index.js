@@ -2,13 +2,16 @@ import {
     Input,
     Select,
     Button,
+    InputRightElement,
     FormHelperText,
     FormErrorMessage,
-    FormControl
+    FormControl,
+    InputGroup,
+    Stack
 } from "@chakra-ui/react";
 
 import { useState, useRef } from "react";
-
+import { PhoneIcon,EmailIcon,AtSignIcon,TriangleDownIcon } from '@chakra-ui/icons'
 import style from './style.module.css'
 
 import emailjs from '@emailjs/browser'
@@ -28,6 +31,7 @@ export default function FormContact() {
     return (
         <div className={style.form_container}>
             <p>¡Queremos ayudarte!</p>
+       
             <form
                 ref={form}
                 onSubmit={(e) => {
@@ -47,17 +51,26 @@ export default function FormContact() {
                     }
                 }}
             >
-                <Input
+             <Stack spacing={4}>
+            <InputGroup>
+                <Input 
                     isInvalid={!name && isError}
                     errorBorderColor='red.300'
                     borderRadius={'10px'}
-                    h='40px' fontSize='20px'
-                    mt={8}
+                    h='40px'                     
+                    pointerEvents='none'
+                    fontSize='20px'                    
+                    type='tel'
                     mb={4}
                     name='name'
                     placeholder='Tu nombre'
                     onChange={(e) => setName(e.target.value)}
                 />
+                <InputRightElement  margin={2} paddingRight={10} children={<AtSignIcon color='gray.300' w={7} h={7} />} />
+              </InputGroup>  
+              </Stack>
+              <Stack spacing={4}>
+            <InputGroup>
                 <Input
                     isInvalid={!phone && isError}
                     borderRadius={'10px'}
@@ -68,6 +81,11 @@ export default function FormContact() {
                     placeholder='Telefono'
                     onChange={(e) => setPhone(e.target.value)}
                 />
+                  <InputRightElement  margin={2} paddingRight={10} children={<PhoneIcon color='gray.300' w={7} h={7} />} />
+                </InputGroup>
+                </Stack>
+                <Stack spacing={4}>
+            <InputGroup>
                 <Input
                     isInvalid={!email && isError}
                     borderRadius={'10px'}
@@ -79,12 +97,16 @@ export default function FormContact() {
                     placeholder='Correo electronico'
                     onChange={(e) => setEmail(e.target.value)}
                 />
+                  <InputRightElement  margin={2} paddingRight={10} children={<EmailIcon color='gray.300' w={7} h={7} />} />
+             </InputGroup>
+             </Stack>
                 <Select
                     isInvalid={!option && isError}
                     borderRadius={'10px'}
                     h='40px'
                     fontSize='20px'
-                    mb={4}
+                    mb={4}                
+                   icon={ <TriangleDownIcon  />}
                     name='options'
                     placeholder='Programa interesado'
                     onChange={(e) => setOption(e.target.value)}
@@ -94,8 +116,10 @@ export default function FormContact() {
                     <option>Bachillerato</option>
                     <option>Adultos</option>
                 </Select>
+          
                 {isError ? <span className={style.errorMessage}>Todos los campos son obligatorios</span>: null}
                 <ModalAndButton isError={isError} />
+         
             </form>
         </div>
     );
