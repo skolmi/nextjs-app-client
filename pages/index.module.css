@@ -7,8 +7,41 @@
     width: 100%;
     height: auto;
     
+
+}
+.containerVirtuals .form_container{
+
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
+.containerVirtuals .form_containerrigth{
+
+    position: absolute;
+    top: 50%;
+    right: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.rigthptext{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.rigthptext2{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
 .img_container .form_container {
     position: absolute;
     top: 50%;
@@ -44,6 +77,30 @@
     font-weight: 600;    
     margin: 5px;
     font-size: 40px;
+    font-family: 'Poppins';
+
+}
+.containerPress{
+    background-image: url(./../assets/fondoprimariaback.png);
+}
+.containerPress h1{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 40px;
+    font-family: 'Poppins';
+
+}
+
+.containerPress h3{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 25px;
     font-family: 'Poppins';
 
 }
@@ -135,6 +192,21 @@
 
 }
 
+.containerVirtuals{
+    text-align: center; 
+    position: relative;
+
+    
+}
+.containerVirtual p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: 50px;
+
+}
+
 .texto {
     text-align: center;
     font-size: 20px;
@@ -182,6 +254,16 @@
     padding: 20px;
 }
 
+.educacionvirtual p  {
+        
+    color: white;
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 .Nosotrosdiv {
     background-color: #007B77;
     padding: 20px;
@@ -392,5 +474,10 @@ text-align: center;
     .form_container {
         display: flex;
         justify-content: center;
+    }
+
+    .containerVirtuals img{
+        width: 100%;
+        height: auto;
     }
 }
