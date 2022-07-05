@@ -13,9 +13,9 @@ export default function LinkBar() {
             </div>
             <form>
                 <ul>
-                    {/* <li >
+                    <li >
                         <a href="/payments">Pagos</a>
-                    </li> */}
+                    </li>
                     {/* <li>
                         <a href="#">Escuela de padres</a>
                     </li> */}
