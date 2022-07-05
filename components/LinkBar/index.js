@@ -8,7 +8,7 @@ export default function LinkBar() {
         <nav className={style.linkBar}>
             <div className={style.buttonContainer}>
                 <button type="button">
-                    <Image src={platformAccessButton} alt="Acceso a Plataforma" />
+                    <a href="https://miplataformaeducativa.skolmi.com/login/index.php"><Image src={platformAccessButton} alt="Acceso a Plataforma" /></a>
                 </button>
             </div>
             <form>
