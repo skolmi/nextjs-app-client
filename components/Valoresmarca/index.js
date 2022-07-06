@@ -20,7 +20,7 @@ import{
 export default function EducationOnl(){
     return(
 
-<Center margin={5} padding={10}>
+<Center py={6}  className={style.container} >
             <Box 
                 margin={'10px'}
                 maxW={'310px'}

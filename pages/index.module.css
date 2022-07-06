@@ -64,10 +64,14 @@
 }
 
 .container {
-    padding: var(--layout-padding);
-    margin: 5%;
-    text-align: center;
-    font-size: 18px;
+    
+    margin: 5%; 
+    text-align: center;   
+    flex-wrap: wrap;
+}
+
+.containercertificacion{
+    flex-wrap: wrap;
 }
 
 .container h1 {
@@ -233,7 +237,7 @@
     font-family: 'Poppins';
 }
 .texto_2 {
-    text-align: center;
+    text-align: justify;
     font-size: 19px;
     font-weight: 400;
     line-height: 29px;
@@ -241,7 +245,13 @@
     font-family: 'Poppins';
 }
 
-.texto_E {
+.textocalidad{
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.politicaCalidad p {
     text-align: justify;
     font-size: 18px;
     font-weight: 600;
@@ -341,22 +351,23 @@
     background-color: #D9D9D9;
     padding: 20px;
     
+    
 }
 
 .politicaCalidad {
     background-color:#D9D9D980;
-    padding: 5px; 
-    padding: 10px;
-    top: 50px;
-    align-items: center;
+    padding: 40px;    
+    flex-wrap: wrap;     
+    
+    
 }
 
 .Certificacion {
     
-    padding: 10px; 
-    padding: 20px;
-    top: 50px;
-    align-items: center;
+    padding: 50px; 
+    
+    flex-wrap: wrap;
+    
 }
 
 .politicaCalidad2{
@@ -370,7 +381,7 @@
     font-family: 'Poppins';
     font-size: 40px;
     font-weight: 600;
-    text-align: center;
+    align-content: center;
     
 
 }
@@ -479,5 +490,9 @@ text-align: center;
     .containerVirtuals img{
         width: 100%;
         height: auto;
+    }
+    .flex{
+        
+   flex-wrap: wrap;
     }
 }
