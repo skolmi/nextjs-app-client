@@ -57,13 +57,10 @@ export default function FormContact() {
                     isInvalid={!name && isError}
                     errorBorderColor='red.300'
                     borderRadius={'10px'}
-                    h='40px'                     
-                    pointerEvents='none'
-                    fontSize='20px'                    
-                    type='tel'
+                    h='40px'                                     
+                    fontSize='20px'                                    
                     mb={4}
                     name='name'
-                    rightic
                     placeholder='Tu nombre'
                     onChange={(e) => setName(e.target.value)}
                 />
