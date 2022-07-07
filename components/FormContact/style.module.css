@@ -4,17 +4,23 @@
     padding: 3rem;
     border-radius: 10px;
     width: 37rem;
-    height: 40rem;
+    height: 37rem;
     font-size: 2.5rem;
 }
 .form_container p {
     text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 600;
 }
 
 .errorMessage {
     color: red;
     font-size: 1.8rem;
     font-weight: 600;
+}
+.SelectContainer option{
+    color: black;
 }
 
 @media(max-width: 1000px) {

@@ -1,8 +1,8 @@
 import Layout from '../components/layout';
 import mainImage from "./../assets/banner_principal.png";
 import Image from 'next/image';
-import style from './index.module.css'
-import FloatingWhatsApp from 'react-floating-whatsapp'
+import style from './index.module.css';
+import FloatingWhatsApp from 'react-floating-whatsapp';
 import EducationOnl from './../components/EducationOnline';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
@@ -22,7 +22,6 @@ import libertad from '../assets/Libertad.svg';
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import TestimonyCard from "../components/TestimonyCard";
-import Head from 'next/head'
 
 import React from 'react';
 
@@ -36,6 +35,7 @@ export default function Index() {
           accountName="Skolmi"
           allowClickAway
           notification
+          
           notificationDelay={60000} // 1 minute
           chatMessage=' ¡ Estamos para ayudarte !, te responderemos en el menor tiempo posible'
           className={style.floating_Whatsapp}
@@ -68,7 +68,7 @@ export default function Index() {
                     <Image src={icon_18_años} width="100px" height='100px' />
                   </div>
                   <p className={style.number}>18</p>
-                  <p className={style.texto}>años de <br></br> experiencia</p>
+                  <p className={style.texto}>Años de <br></br> experiencia</p>
                 </div>
 
                 <div className="col-sm">
@@ -219,5 +219,5 @@ export default function Index() {
         </div>
       </Layout>
     </>
-  )
+  );
 }
