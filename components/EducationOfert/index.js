@@ -16,7 +16,7 @@ import {
 
 export default function Compenentes() {
     return (
-        <Center margin={5} padding={10}>
+        <Center className={style.container} margin={5} padding={10}>
             <Box
                 margin={'5px'}
                 maxW={'300px'}

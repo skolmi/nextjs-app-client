@@ -1,13 +1,49 @@
 .img_container {
     position: relative;
+    padding: 0;
+    line-height: 0;
     
 }
+.diventer{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.panelbachiAdults{
+    background-color:#FF8C00;    
+    float: left;
+    height: 361px;
 
+}
+
+.panelbachiAdults .form_container{
+    
+    float: right;
+    
+    
+}
+.panelbachi {
+    background-color:#00194A;    
+    float: left;
+    height: 361px;
+}
+
+.imagenright{
+    float: right;
+    width: 500;
+    height: 361px;
+    
+}
 .img_container img {
     width: 100%;
     height: auto;
     
-
+}
+.panelbachi .form_container{
+    
+    float: right;
+    
+    
 }
 .containerVirtuals .form_container{
 
@@ -50,6 +86,13 @@
     -ms-transform: translate(-50%, -50%);
 }
 
+.img_container .img_container_bac{
+    position:absolute;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
 .img_container .text {
     position: absolute;
     top: 60%;
@@ -87,6 +130,66 @@
 .containerPress{
     background-image: url(./../assets/fondoprimariaback.png);
 }
+
+.containerprimaira{
+    background-image: url(./../assets/fondoprimariaback2.png);
+}
+
+.containeradults{
+ 
+    background-color: white;
+}
+.containeradults h1{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 40px;
+    font-family: 'Poppins';
+
+}
+.containerprimaira  h1{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 40px;
+    font-family: 'Poppins';
+
+}
+
+.containeradults  h3{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Poppins';
+
+}
+
+.containerprimaira  h3{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Poppins';
+
+}
+
+.divblanco{
+    background-color: #007B77;
+    width: 100%;
+    height: 160px;
+    margin: 10px;
+
+}
+
 .containerPress h1{
     padding: var(--layout-padding);
     text-align: center;
@@ -304,6 +407,16 @@
 
 }
 
+.textooferta {
+    
+    color: white;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    
+    text-align: justify;
+
+}
 .textovalores {
   
     color: black;
@@ -324,6 +437,20 @@
     letter-spacing: 0em;
     text-align: center;
     color: #FF8C00;
+
+
+
+}
+
+.textoadults {
+
+    font-family: 'Poppins';
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
 
 
 
@@ -491,8 +618,7 @@ text-align: center;
         width: 100%;
         height: auto;
     }
-    .flex{
-        
+    .flex{        
    flex-wrap: wrap;
     }
 }
