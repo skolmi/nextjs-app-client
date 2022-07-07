@@ -243,15 +243,15 @@ const NAV_ITEMS = [
             },
             {
                 label: 'Primaria',
-                href: '#',
+                href: '/primary',
             },
             {
                 label: 'Bachillerato',
-                href: '#',
+                href: '/highschool',
             },
             {
                 label: 'Adultos',
-                href: '#',
+                href: '/adults',
             }
         ],
     },

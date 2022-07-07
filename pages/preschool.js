@@ -9,11 +9,11 @@ import TestimonyCard from "../components/TestimonyCard";
 import { Carousel } from "react-responsive-carousel";
 import imagewellnes from "./../assets/image_wellness.png";
 import banner_footer_preescolar from "././../assets/banner_footer_preescolar.png";
-
+import AulasVirtuales from '../components/AulasInteractivas';
 import {
     Button
 } from "@chakra-ui/react";
-export default function Nosotros() {
+export default function preschool() {
     return (
         <Layout>
             <section className="home_banner_area">
@@ -23,7 +23,9 @@ export default function Nosotros() {
                         <FormContact />
                     </div>
                 </div>
+                <div className={style.img_container}>
                 <Image src={preescolar_info} />
+                </div>
             </section>
             <section  >
                 <div className={style.containerPress}>
@@ -46,17 +48,13 @@ export default function Nosotros() {
                             </div>
                         </Carousel>
                     </div>
-                    <div className={style.educacionvirtual}>
-                        <p className={style.texto1educacionvirtual}>Objeto Virtual de Aprendizaje (Demo)</p>
                     </div>
-                    <div className={style.containerVirtual}>
-                        <p>La virtualidad es un sistema de acceso y representación de la realidad  que desde lo digital potencia nuestras habilidades, intensifica nuestras capacidades y se manifiesta a través de actos comunicativos.
-                            Los objetos virtuales de aprendizaje son recursos educativos estructurados para hacer del acto de aprendizaje una experiencia significativa a través de la interacción, la inmersión y la cercanía de los contenidos.</p>
-                    </div>
-                    <div className={style.containerVirtuals}>
-                        <Image src={imagewellnes} />
-                    </div>
-                    <dvi className="container">
+                    </section>
+                    <section>
+                      
+                    <div className={style.containerPress}>
+                    <AulasVirtuales/>
+                    <div className="container">
                         <div className={style.containerVirtuals}>
                             <Image src={banner_footer_preescolar} />
                             <div className={style.form_containerrigth}>
@@ -66,16 +64,13 @@ export default function Nosotros() {
                             </div>
                             
                             <div className={style.form_container}>
-                                <Button background={'#FF8C00'} textColor={'#FFFFFF'} fontSize={'25px'} fontFamily={'Poppins'} width={'300px'} height={'50px'}>Empezar</Button>
+                                <Button background={'#FF8C00'} textColor={'#FFFFFF'} fontSize={'20px'} fontFamily={'Poppins'} width={'150px'} height={'50px'}>Empezar</Button>
                             </div>
                         </div>
-                    </dvi>
+                    </div>
 
                 </div>
             </section>
-
-
-
         </Layout>
 
     );

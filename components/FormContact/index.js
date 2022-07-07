@@ -58,12 +58,9 @@ export default function FormContact() {
                             errorBorderColor='red.300'
                             borderRadius={'10px'}
                             h='40px'
-                            pointerEvents='none'
                             fontSize='20px'
-                            type='tel'
                             mb={4}
                             name='name'
-                            rightic
                             placeholder='Tu nombre'
                             onChange={(e) => setName(e.target.value)}
                         />
