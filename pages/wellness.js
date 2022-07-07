@@ -50,6 +50,7 @@ export default function Wellness() {
                                 color='white'
                                 height='100%'
                                 fontSize='20px'
+                                padding={10}
                                 _hover={{ bg: '#FF8C00' }}
                             >
                                 Psicorientación
@@ -90,7 +91,7 @@ export default function Wellness() {
                         </Box>
                     </Box>
                     {buttonActivate1 ?
-                        <Box>
+                        <Box margin={10}>
                             {isSmallThan768 ?
                                 <Box display='flex' justifyContent='center'>
                                     <Box maxWidth={555} marginBottom={5} className={style.shadow} display='flex' flexWrap='wrap' justifyContent='center'>
@@ -112,7 +113,7 @@ export default function Wellness() {
                                     <Box minWidth={500}>
                                         <Image src={psicorientacion} />
                                     </Box>
-                                    <Box paddingTop='50px' paddingRight='100px' paddingLeft='100px' maxWidth={940} display='flex' flexDirection='column'>
+                                    <Box paddingTop='20px' paddingRight='100px' paddingLeft='100px' maxWidth={940} display='flex' flexDirection='column'>
                                         <Text fontSize={25} textAlign='center' fontWeight='800'>
                                             Psicorientación
                                         </Text>
@@ -127,7 +128,7 @@ export default function Wellness() {
                         null
                     }
                     {buttonActivate2 ?
-                        <Box>
+                       <Box margin={10}>
                             {isSmallThan768 ?
                                 <Box display='flex' justifyContent='center'>
                                     <Box maxWidth={555} marginBottom={5} className={style.shadow} display='flex' flexWrap='wrap' justifyContent='center'>
@@ -149,7 +150,7 @@ export default function Wellness() {
                                     <Box minWidth={500}>
                                         <Image src={orientacion_vocacional} />
                                     </Box>
-                                    <Box paddingTop='50px' paddingRight='100px' paddingLeft='100px' maxWidth={940} display='flex' flexDirection='column'>
+                                    <Box paddingTop='20px' paddingRight='100px' paddingLeft='100px' maxWidth={940} display='flex' flexDirection='column'>
                                         <Text fontSize={25} textAlign='center' fontWeight='800'>
                                             Orientación Vocacional y profesional
                                         </Text>
@@ -164,7 +165,7 @@ export default function Wellness() {
                         null
                     }
                     {buttonActivate3 ?
-                        <Box>
+                         <Box margin={10}>
                             {isSmallThan768 ?
                                 <Box display='flex' justifyContent='center'>
                                     <Box maxWidth={555} marginBottom={5} className={style.shadow} display='flex' flexWrap='wrap' justifyContent='center'>
@@ -187,7 +188,7 @@ export default function Wellness() {
                                     <Box minWidth={500}>
                                         <Image src={equipo_de_bienestar} />
                                     </Box>
-                                    <Box paddingTop='50px' paddingRight='100px' paddingLeft='100px' maxWidth={940} display='flex' flexDirection='column'>
+                                    <Box paddingTop='20px' paddingRight='100px' paddingLeft='100px' maxWidth={940} display='flex' flexDirection='column'>
                                         <Text fontSize={25} textAlign='center' fontWeight='800'>
                                             Equipo de bienestar
                                         </Text>

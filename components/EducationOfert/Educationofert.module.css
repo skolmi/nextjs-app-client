@@ -1,0 +1,29 @@
+.roundedCard {
+    border-radius: 20px !important;
+}
+.card {
+    margin: 20px;
+}
+
+.bold{
+    font-weight: 'bold'
+}
+
+.text{
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    font-size: 'Poppins';
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.textHead {
+    
+    font-size: 25px;
+    font-family: 'Poppins';
+}
+
+.container {
+    flex-wrap: wrap;
+}

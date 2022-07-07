@@ -89,7 +89,7 @@ const DesktopNav = () => {
                                 color={linkColor}
                                 _hover={{
                                     textDecoration: 'none',
-                                    color: linkHoverColor,
+                                    color: linkHoverColor
                                 }}>
                                 {navItem.label}
                             </Link>
@@ -176,7 +176,7 @@ const MobileNavItem = ({ label, children, href }) => {
                 justify={'space-between'}
                 align={'center'}
                 _hover={{
-                    textDecoration: 'none',
+                    textDecoration: 'none'
                 }}>
                 <Text
                     fontWeight={600}
@@ -219,7 +219,7 @@ const NAV_ITEMS = [
 
     {
         label: 'Nosotros',
-        href: '/Nosotros',
+        href: '/us'
         // children: [
         // {
         //     label: 'Explore Design Work',
@@ -239,7 +239,7 @@ const NAV_ITEMS = [
         children: [
             {
                 label: 'Preescolar',                
-                href: '#',
+                href: '/preschool',
             },
             {
                 label: 'Primaria',
@@ -258,7 +258,7 @@ const NAV_ITEMS = [
     {
         label: 'Bienestar estudiantil',
         href: '/wellness',
-    },
+    }
     // {
     //     label: 'FAQ',
     //     href: '#',

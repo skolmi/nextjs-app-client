@@ -1,12 +1,47 @@
 .img_container {
     position: relative;
+    
 }
 
 .img_container img {
     width: 100%;
     height: auto;
+    
+
+}
+.containerVirtuals .form_container{
+
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
+.containerVirtuals .form_containerrigth{
+
+    position: absolute;
+    top: 50%;
+    right: 60%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.rigthptext{
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.rigthptext2{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
 .img_container .form_container {
     position: absolute;
     top: 50%;
@@ -29,10 +64,14 @@
 }
 
 .container {
-    padding: var(--layout-padding);
-    margin: 5%;
-    text-align: center;
-    font-size: 18px;
+    
+    margin: 5%; 
+    text-align: center;   
+    flex-wrap: wrap;
+}
+
+.containercertificacion{
+    flex-wrap: wrap;
 }
 
 .container h1 {
@@ -45,13 +84,36 @@
     font-family: 'Poppins';
 
 }
+.containerPress{
+    background-image: url(./../assets/fondoprimariaback.png);
+}
+.containerPress h1{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 40px;
+    font-family: 'Poppins';
+
+}
+
+.containerPress h3{
+    padding: var(--layout-padding);
+    text-align: center;
+    color: #00194A ;
+    font-weight: 600;    
+    margin: 5px;
+    font-size: 25px;
+    font-family: 'Poppins';
+
+}
 
 .container h2 {
     padding: var(--layout-padding);
     text-align: center;
     color: #FF8C00;
     font-weight: 600;
-    font-size: 2rem;
     font-size: 40px;
     font-family: 'Poppins';
 }
@@ -134,9 +196,23 @@
 
 }
 
+.containerVirtuals{
+    text-align: center; 
+    position: relative;
+
+    
+}
+.containerVirtual p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: 50px;
+
+}
+
 .texto {
     text-align: center;
-    
     font-size: 20px;
     font-weight: 600;
     font-family: 'Poppins';
@@ -168,18 +244,45 @@
     letter-spacing: 0em;
     font-family: 'Poppins';
 }
+
+.textocalidad{
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.politicaCalidad p {
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    font-family: 'Poppins';
+}
 .educacionvirtual {
     background-color: #0B0B61;
     padding: 20px;
 }
 
+.educacionvirtual p  {
+        
+    color: white;
+    font-family: 'Poppins';
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+}
 .Nosotrosdiv {
     background-color: #007B77;
     padding: 20px;
     
 }
 
-
+.imgnos{
+    background-color: #007B77;
+}
 .textNosotros{
     color: white;
     font-family: 'Poppins';
@@ -248,22 +351,23 @@
     background-color: #D9D9D9;
     padding: 20px;
     
+    
 }
 
 .politicaCalidad {
     background-color:#D9D9D980;
-    padding: 5px; 
-    padding: 10px;
-    top: 50px;
-    align-items: center;
+    padding: 40px;    
+    flex-wrap: wrap;     
+    
+    
 }
 
 .Certificacion {
     
-    padding: 10px; 
-    padding: 20px;
-    top: 50px;
-    align-items: center;
+    padding: 50px; 
+    
+    flex-wrap: wrap;
+    
 }
 
 .politicaCalidad2{
@@ -277,7 +381,7 @@
     font-family: 'Poppins';
     font-size: 40px;
     font-weight: 600;
-    text-align: center;
+    align-content: center;
     
 
 }
@@ -310,9 +414,8 @@ text-align: center;
 
 }
 .titlebenyvent {
-    font-size: 30px;
     color: black;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 40px;
     font-weight: 600;
     line-height: 60px;
@@ -322,12 +425,11 @@ text-align: center;
 }
 
 .titlebenyvent2 {
-    font-size: 20px;
+   
     color: black;
-    text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 38px;
     letter-spacing: 0em;
     text-align: center;
@@ -383,5 +485,14 @@ text-align: center;
     .form_container {
         display: flex;
         justify-content: center;
+    }
+
+    .containerVirtuals img{
+        width: 100%;
+        height: auto;
+    }
+    .flex{
+        
+   flex-wrap: wrap;
     }
 }

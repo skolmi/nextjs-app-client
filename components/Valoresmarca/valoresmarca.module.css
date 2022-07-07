@@ -29,3 +29,7 @@
     border-radius: 0px;
     
 }
+
+.container {
+    flex-wrap: wrap;
+}
