@@ -22,9 +22,9 @@ export default function LinkBar() {
                     <li>
                         <a href="#">contacto</a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="#">PQR</a>
-                    </li>
+                    </li> */}
                 </ul>
             </form>
         </nav>

@@ -23,10 +23,18 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import TestimonyCard from "../components/TestimonyCard";
 
+import CamiloCamachoImg from '../assets/CamiloCamacho.png';
+import CarlosCastaneda from '../assets/Carlos-Castañeda.png';
+import DanielaCaicedo from '../assets/DanielaCaicedo.png';
+import MariaTeresa from '../assets/Maria-Teresa.png';
+import PaulaCortez from '../assets/Paula-Cortez.png';
+import SebastianPardo from '../assets/SebastianPardo.png';
+
 import React from 'react';
 
 
 export default function Index() {
+  const name = 'Camilo Camacho'
   return (
     <>
       <Layout>
@@ -193,19 +201,104 @@ export default function Index() {
           <div className={`${style.carouselContainer} `}>
           <Carousel showStatus={false}>
               <div className={style.carouselItem}>
-                  <TestimonyCard />
-                  <TestimonyCard />
-                  <TestimonyCard />
+                  <TestimonyCard
+                    name = 'Camilo Camacho'
+                    study = 'Bachillerato'
+                    ocupation = 'Artista'
+                    text = 'Skolmi ha sido realmente la mejor decisión que pudimos tomar, ya que mis hijos han desarrollado habilidades nuevas y han logrado aprovechar mejor su tiempo para disfrutar de lo que más les gusta que es la danza. ¡¡Son lo mejor!!'
+                  >
+                    <Image
+                          boxSize={'136px !important'}
+                          src={CamiloCamachoImg}
+                          borderRadius='full'
+                          alt={'Author'}
+                          css={{
+                              border: '7px solid #00194A !important'
+                          }}
+                      />
+                  </TestimonyCard>
+                  <TestimonyCard
+                    name = 'Carlos Castañeda'
+                    study = 'Padre'
+                    ocupation = 'Conductor'
+                    text = 'Mi hijo estudia en Skolmi hace 3 años y el cambio fue muy positivo debido a que es deportista de alto rendimiento, estudiar virtual le ha permitido organizar su horario y hacer lo que le gusta.'
+                  >
+                    <Image
+                          boxSize={'136px !important'}
+                          src={CarlosCastaneda}
+                          borderRadius='full'
+                          alt={'Author'}
+                          css={{
+                              border: '7px solid #00194A !important'
+                          }}
+                      />
+                  </TestimonyCard>
+                  <TestimonyCard
+                  name = 'Daniela Caicedo'
+                  study = 'Bachillerato'
+                  ocupation = 'Estudiante'
+                  text = 'Actualmente estoy muy agusto en Skolmi, la plataforma es muy bonita, puedo participar en concursos, mis tutores son estupendos, mis amigas son las mejores, aprendo de formas entrenidas...'
+                  >
+                    <Image
+                          boxSize={'136px !important'}
+                          src={DanielaCaicedo}
+                          borderRadius='full'
+                          alt={'Author'}
+                          css={{
+                              border: '7px solid #00194A !important'
+                          }}
+                      />
+                  </TestimonyCard>
               </div>
               <div className={style.carouselItem}>
-                  <TestimonyCard />
-                  <TestimonyCard />
-                  <TestimonyCard />
-              </div>
-              <div className={style.carouselItem}>
-                  <TestimonyCard />
-                  <TestimonyCard />
-                  <TestimonyCard />
+              <TestimonyCard
+                name = 'María Teresa'
+                study = 'Madre'
+                ocupation = 'Publicista'
+                text = 'La plataforma muy interactiva, de fácil acceso, los docentes con una alta preparación en los temas, la flexibilidad de la plataforma nos permitía en familia realizar otras actividades.'
+              >
+                    <Image
+                          boxSize={'136px !important'}
+                          src={MariaTeresa}
+                          borderRadius='full'
+                          alt={'Author'}
+                          css={{
+                              border: '7px solid #00194A !important'
+                          }}
+                      />
+                  </TestimonyCard>
+                  <TestimonyCard
+                    name = 'Paula Cortez'
+                    study = 'Primaria'
+                    ocupation = 'Estudiante'
+                    text = 'Me gusta mucho estudiar en Skolmi por que la plataforma es muy bonita, los profes son muy creativos y amables, soy muy feliz.'
+                  >
+                    <Image
+                          boxSize={'136px !important'}
+                          src={PaulaCortez}
+                          borderRadius='full'
+                          alt={'Author'}
+                          css={{
+                              border: '7px solid #00194A !important'
+                          }}
+                      />
+                  </TestimonyCard>
+                  <TestimonyCard
+                    name = 'Sebastian Pardo'
+                    study = 'Primaria'
+                    ocupation = 'Youtuber'
+                    text = 'Me encanta estudiar en Skolmi, ya que me da mas tiempo para poder realizar mis actividades extra escolares, soy feliz estudiando con los profes, y enseñan con mucho amor.'
+                  >
+                    <Image
+                          boxSize={'136px !important'}
+                          src={SebastianPardo}
+                          borderRadius='full'
+                          alt={'Author'}
+                          css={{
+                              border: '7px solid #00194A !important'
+                          }}
+                      />
+                  </TestimonyCard>
               </div>
           </Carousel>
         </div>

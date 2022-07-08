@@ -36,7 +36,11 @@ export default function EducationOnl() {
                         <Text className={style.text}>“¡Una primera experiencia es muy importante! Asegurate que tus hijos tengan una buena experiencia estudiando en Skolmi.</Text>
                     </Stack>
                     <Stack align={'center'}>
-                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>Conoce Más</Button>
+                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>
+                            <a href='/preschool'>
+                                Conoce Más
+                            </a>
+                        </Button>
                     </Stack>
                 </Box>
             </Box>
@@ -59,7 +63,11 @@ export default function EducationOnl() {
                         <Text> <br></br></Text>
                     </Stack>
                     <Stack align={'center'}>
-                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>Conoce Más</Button>
+                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>
+                            <a href='/primary'>
+                                Conoce Más
+                            </a>
+                        </Button>
                     </Stack>
                 </Box>
             </Box>
@@ -80,7 +88,11 @@ export default function EducationOnl() {
                         <Text className={style.text}>Brindamos una educación inclusiva y afectiva con un toque de flexibilidad, ¡Disfruta de tu bachillerato en Skolmi!</Text>
                     </Stack>
                     <Stack align={'center'}>
-                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>Conoce Más</Button>
+                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>
+                            <a href='/highschool'>
+                                Conoce Más
+                            </a>
+                        </Button>
                     </Stack>
                 </Box>
             </Box>
@@ -101,7 +113,11 @@ export default function EducationOnl() {
                         <Text className={style.text}>“¡Una primera experiencia es muy importante! Asegurate que tus hijos tengan una buena experiencia estudiando en Skolmi.</Text>
                     </Stack>
                     <Stack align={'center'}>
-                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>Conoce Más</Button>
+                        <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>
+                            <a href='/adults'>
+                                Conoce Más
+                            </a>
+                        </Button>
                     </Stack>
                 </Box>
             </Box>
