@@ -36,7 +36,7 @@ import { useMediaQuery } from '@chakra-ui/react';
 
 
 export default function Index() {
-  const [isSmallThan1440] = useMediaQuery(`(max-width:1440px)`)
+  const [isLargeThan1441] = useMediaQuery(`(min-width:1441px)`)
   return (
     <>
       <Layout>
@@ -52,10 +52,10 @@ export default function Index() {
         />
         <section className="home_banner_area">
           <div className={style.img_container}>
-            {isSmallThan1440 ?
-            <Image src={mainImage1440}/>
+            {isLargeThan1441 ?
+            <Image src={mainImageL}/>
             :
-            <Image src={mainImageL} />
+            <Image src={mainImage1440} />
             
           }
             <div className={style.form_container}>
