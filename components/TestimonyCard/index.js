@@ -13,7 +13,7 @@ import {
     useColorModeValue,
 } from '@chakra-ui/react';
 
-export default function TestimonyCard() {
+export default function TestimonyCard({children, name, study, ocupation, text}) {
     return (
         <Center py={6}>
             <Box
@@ -26,30 +26,20 @@ export default function TestimonyCard() {
                 className={`${style.card} ${style.roundedCard}`}
             >
                 <Flex justify={'center'} mt={-70}  >
-                    <Image
-                        boxSize={'136px !important'}
-                        src={
-                            'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'
-                        }
-                        borderRadius='full'
-                        alt={'Author'}
-                        css={{
-                            border: '7px solid #00194A !important'
-                        }}
-                    />
+                    {children}
                 </Flex>
 
                 <Box p={6} >
                     <Stack spacing={0} align={'center'} mb={5}>
                         <Heading fontSize={'2xl'} fontWeight={500} fontFamily={'body'}>
-                            Daniel Romero
+                            {name}
                         </Heading>
-                        <Text color={'gray.500'}>Estudiante grado 11°</Text>
-                        <Text color={'gray.500'}>Cantante</Text>
+                        <Text color={'gray.500'}>{study}</Text>
+                        <Text color={'gray.500'}>{ocupation}</Text>
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
-                        <Text textAlign={'center'} color={'gray.500'}>“Estudiar en Skolmi me ha permitido dedicar más tiempo a mi talento qué es cantar, mientras disfruto de estudiar virtual.”</Text>
+                        <Text textAlign={'center'} color={'gray.500'}>{text}</Text>
                     </Stack>
                 </Box>
             </Box>
