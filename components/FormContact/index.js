@@ -1,6 +1,8 @@
 import {
     Input,
-    Select
+    Select,
+    Text,
+    useMediaQuery
 } from "@chakra-ui/react";
 
 import { useState, useRef } from "react";
@@ -21,9 +23,15 @@ export default function FormContact() {
 
     const form = useRef();
 
+    const [isLargeThan362] = useMediaQuery(`(min-widhth:362px)`)
+
     return (
         <div className={style.form_container}>
-            <p>¡Queremos ayudarte!</p>
+            {isLargeThan362 ?
+                <Text>¡Queremos ayudarte!</Text>
+                :
+                <Text fontSize='20px'>¡Queremos ayudarte!</Text>
+            }
             <form
                 ref={form}
                 onSubmit={(e) => {
