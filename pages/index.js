@@ -1,5 +1,6 @@
 import Layout from '../components/layout';
-import mainImage from "./../assets/banner_principal.png";
+import mainImageL from "./../assets/banner_principal.png";
+import mainImage1440 from '../assets/banner_principal_old.png';
 import Image from 'next/image';
 import style from './index.module.css';
 import FloatingWhatsApp from 'react-floating-whatsapp';
@@ -31,10 +32,11 @@ import PaulaCortez from '../assets/Paula-Cortez.png';
 import SebastianPardo from '../assets/SebastianPardo.png';
 
 import React from 'react';
+import { useMediaQuery } from '@chakra-ui/react';
 
 
 export default function Index() {
-  const name = 'Camilo Camacho'
+  const [isSmallThan1440] = useMediaQuery(`(max-width:1440px)`)
   return (
     <>
       <Layout>
@@ -50,7 +52,12 @@ export default function Index() {
         />
         <section className="home_banner_area">
           <div className={style.img_container}>
-            <Image src={mainImage} />
+            {isSmallThan1440 ?
+            <Image src={mainImage1440}/>
+            :
+            <Image src={mainImageL} />
+            
+          }
             <div className={style.form_container}>
               <FormContact />
             </div>
