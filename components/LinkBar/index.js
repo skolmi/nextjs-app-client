@@ -10,6 +10,8 @@ import iconwhatsapp from '../../assets/Icon_Whatsapp.svg';
 import iconEmail from '../../assets/Icon_Email.svg';
 import iconContacto from '../../assets/Icon_Contacto.svg';
 
+import iconPlataforma from '../../assets/Icono_Acceso_Plataforma.svg';
+
 
 export default function LinkBar() {
     const [showModal, setShowModal] = useState(false);
@@ -17,9 +19,16 @@ export default function LinkBar() {
         <React.Fragment>
             <nav className={style.linkBar}>
                 <div className={style.buttonContainer}>
-                    <button type="button">
-                        <a href="https://miplataformaeducativa.skolmi.com/login/index.php"><Image src={platformAccessButton} alt="Acceso a Plataforma" /></a>
-                    </button>
+                        <a href="https://miplataformaeducativa.skolmi.com/login/index.php">
+                            <Box display='flex' padding='5px' alignItems='center'>
+                                <Box padding='5px'>
+                                    <Image src={iconPlataforma} alt="Acceso a Plataforma" />
+                                </Box>
+                                <Text>
+                                    Acceso<br/> a la plataforma
+                                </Text>
+                            </Box>
+                        </a>
                 </div>
                 <form>
                     <ul>
