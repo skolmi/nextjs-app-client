@@ -6,6 +6,7 @@ import React from 'react';
 import Head from "next/head";
 import Valores from './../components/Valoresmarca';
 import ISO9001Certificado from './../assets/ISO9001Certificado.png';
+import { Box } from "@chakra-ui/react";
 export default function Nosotros() {
     return (
         <>
@@ -52,33 +53,33 @@ export default function Nosotros() {
 
                     <section className={style.politicaCalidad} >
 
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-auto">
-                                <div className={style.textocalidad}>
-                                    <div className="row">
-                                        <div className="col">
-                                            <h1 className={style.textpolitica}>Política</h1>
+                        <div className="container">
+                            <div className="row justify-content-center d-flex" >
+                                <div className="col-auto">
+                                    <div className={style.textocalidad}>
+                                        <div className="row">
+                                            <div className="col">
+                                                <h1 className={style.textpolitica}>Política</h1>
+                                            </div>
+                                            <div className="col">
+                                                <h1 className={style.textpolitica3}>de</h1>
+                                            </div>
                                         </div>
-                                        <div className="col">
-                                            <h1 className={style.textpolitica3}>de</h1>
+                                        <div className="">
+                                            <div className="col">
+                                                <h1 className={style.textpolitica4}> Calidad</h1>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="">
-                                        <div className="col">
-                                            <h1 className={style.textpolitica4}> Calidad</h1>
-                                        </div>                                
-                                    </div>
+
+                                </div>
+
+                                <div className="col-9">
+                                    <p >Somos una familia educativa que, a través de una modalidad interactiva, dinámica, afectiva con apoyo tecnológicos del siglo XXI, formamos personas en educación preescolar, básica y media para jóvenes y adultos. Además, formamos ciudadanos futuristas, críticos y partícipes de la globalización.
+                                        Comprometida con la satisfacción de las necesidades y expectativas de nuestros educandos y partes interesadas, el cumplimiento de la normativa al alcance del sistema de la educación virtual.; todo bajo una cultura de afectos, felicidad y mejoramiento continuo del sistema de gestión de calidad. Esta política será publicada a todas las partes interesadas.</p>
                                 </div>
 
                             </div>
-
-                            <div className="col-9">
-                                <p >Somos una familia educativa que, a través de una modalidad interactiva, dinámica, afectiva con apoyo tecnológicos del siglo XXI, formamos personas en educación preescolar, básica y media para jóvenes y adultos. Además, formamos ciudadanos futuristas, críticos y partícipes de la globalización.
-                                    Comprometida con la satisfacción de las necesidades y expectativas de nuestros educandos y partes interesadas, el cumplimiento de la normativa al alcance del sistema de la educación virtual.; todo bajo una cultura de afectos, felicidad y mejoramiento continuo del sistema de gestión de calidad. Esta política será publicada a todas las partes interesadas.</p>
-                            </div>
-
-                        </div>
                         </div>
 
 
@@ -91,17 +92,17 @@ export default function Nosotros() {
                         <div className={style.beneficiosyventajasdiv}>
                             <h1 className={style.textovalores}>Certificación</h1>
                         </div>
-                  
-                           
-                                <div className={style.Certificacion}>
-                                <div className="container">
+
+
+                        <div className={style.Certificacion}>
+                            <div className="container">
                                 <div className="row">
-                                <div className="col-auto">
-                                    <Image width={390} height={300} src={ISO9001Certificado} />
-                                </div>
-                                <div className="col-7">
-                                    <h1 className={style.texto_2}><strong>Certificación ISO 9001:2015 otorgada por ICONTEC:</strong> Implementamos el Sistema de Gestión de Calidad (SGC) en Skolmi y luego que el ICONTEC validara la adecuación y el control de la gestión que realizamos de nuestros procesos, logramos la certificación en este 2021, con el propósito de renovarla cada año para asegurar de forma sistemática el logro de objetivos y metas, así como el mejoramiento continuo de nuestra plataforma, todo esto con el fin de satisfacer plenamente las necesidades de nuestros clientes y usuarios. El alcance del Sistema de Gestión de Calidad en Skolmi incluye la prestación de servicios de la plataforma tecnológica a instituciones educativas para los niveles de educación preescolar, primaria y secundaria bajo la modalidad virtual.</h1>
-                                </div>
+                                    <div className="col-auto">
+                                        <Image width={390} height={300} src={ISO9001Certificado} />
+                                    </div>
+                                    <Box width='100%'>
+                                        <h1 className={style.texto_2}><strong>Certificación ISO 9001:2015 otorgada por ICONTEC:</strong> Implementamos el Sistema de Gestión de Calidad (SGC) en Skolmi y luego que el ICONTEC validara la adecuación y el control de la gestión que realizamos de nuestros procesos, logramos la certificación en este 2021, con el propósito de renovarla cada año para asegurar de forma sistemática el logro de objetivos y metas, así como el mejoramiento continuo de nuestra plataforma, todo esto con el fin de satisfacer plenamente las necesidades de nuestros clientes y usuarios. El alcance del Sistema de Gestión de Calidad en Skolmi incluye la prestación de servicios de la plataforma tecnológica a instituciones educativas para los niveles de educación preescolar, primaria y secundaria bajo la modalidad virtual.</h1>
+                                    </Box>
                                 </div>
                             </div>
                         </div>

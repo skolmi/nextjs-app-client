@@ -55,7 +55,7 @@ export default function Index() {
             {isLargeThan1441 ?
             <Image src={mainImage1440}/>
             :
-            <Image src={mainImageL} />
+            <Image src={mainImageL}/>
             
           }
             <div className={style.form_container}>
