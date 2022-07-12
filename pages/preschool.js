@@ -24,7 +24,7 @@ export default function preschool() {
                     </div>
                 </div>
                 <div className={style.img_container}>
-                <Image src={preescolar_info} />
+                    <Image src={preescolar_info} />
                 </div>
             </section>
             <section  >
@@ -48,21 +48,21 @@ export default function preschool() {
                             </div>
                         </Carousel>
                     </div>
-                    </div>
-                    </section>
-                    <section>
-                      
-                    <div className={style.containerPress}>
-                    <AulasVirtuales/>
+                </div>
+            </section>
+            <section>
+
+                <div className={style.containerPress}>
+                    <AulasVirtuales />
                     <div className="container">
                         <div className={style.containerVirtuals}>
                             <Image src={banner_footer_preescolar} />
                             <div className={style.form_containerrigth}>
-                                <p className={style.rigthptext}>¡No esperes más!</p>                                
-                                <p className={style.rigthptext2}>Decidete hoy mismo a estudiar <br></br> virtual en Skolmi.</p>                                
-                                
+                                <p className={style.rigthptext}>¡No esperes más!</p>
+                                <p className={style.rigthptext2}>Decidete hoy mismo a estudiar <br></br> virtual en Skolmi.</p>
+
                             </div>
-                            
+
                             <div className={style.form_container}>
                                 <Button background={'#FF8C00'} textColor={'#FFFFFF'} fontSize={'20px'} fontFamily={'Poppins'} width={'150px'} height={'50px'}>Empezar</Button>
                             </div>
