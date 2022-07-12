@@ -30,12 +30,12 @@ export default function payments() {
                     color='black'
                     padding='20px'
                     borderRadius='10px'
-                    width='370px'
+                    width='500px'
                 >
-                    <Text textAlign='center' fontSize='2xl'>
+                    <Text textAlign='center' fontSize='3xl'>
                         En Skolmi te ofrecemos varias opciones para realizar tus pagos <br />
                         PAGO PSE, TARJETA DE CREDITO, PRODUCTOS DAVIVIENDA Y DAVIPLATA <br />
-                        Por favor llena el siguinte formulario con los datos del estudiante <br />
+                        Por favor llena el siguiente formulario con los datos del estudiante <br />
                     </Text>
                     <form
                         ref={form}

@@ -24,6 +24,7 @@
     "react-dom": "^18.1.0",
     "react-floating-whatsapp": "^4.0.5",
     "react-icons": "^4.4.0",
+    "react-iframe": "^1.8.0",
     "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {

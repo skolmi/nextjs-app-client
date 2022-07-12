@@ -9,13 +9,20 @@ import TestimonyCard from "../components/TestimonyCard";
 import { Carousel } from "react-responsive-carousel";
 import imagewellnes from "./../assets/image_wellness.png";
 import banner_footer_priprimaria from "././../assets/banner_footer_priprimaria.png";
-import AulasVirtuales from '../components/AulasInteractivas';
+import DemoGenially from "../components/DemoGenially";
+import Iframe from "react-iframe";
+
 
 
 import {
-    Button
+    Button, useMediaQuery, Box
 } from "@chakra-ui/react";
 export default function primary() {
+    const url = 'https://view.genial.ly/62b5dacdc25c0800126ae7ab'
+
+    const [isSmallThan768] = useMediaQuery(`(max-width:769px)`);
+
+    const [isLargeThan1024] = useMediaQuery(`(min-width:1024px)`);
 
     return (
         <Layout>
@@ -43,7 +50,7 @@ export default function primary() {
                         <h1>Opiniones</h1>
                         <h3>Del primaria en Skolmi</h3>
                     </div>
-                    <div>
+                    {/* <div>
                         <Carousel showStatus={false}>
                             <div className={style.carouselItem}>
                                 <TestimonyCard />
@@ -51,31 +58,48 @@ export default function primary() {
                                 <TestimonyCard />
                             </div>
                         </Carousel>
-                    </div>
+                    </div> */}
                 </div>
                 </div>
             </section>
-            <section>
-                      
-                      <div className={style.containerprimaira}>
-                      <AulasVirtuales/>
-                      <div className="container">
-                          <div className={style.containerVirtuals}>
-                              <Image src={banner_footer_priprimaria} />
-                              <div className={style.form_containerrigth}>
-                                  <p className={style.rigthptext}>¡No esperes más!</p>                                
-                                  <p className={style.rigthptext2}>Decidete hoy mismo a estudiar <br></br> virtual en Skolmi.</p>                                
-                                  
-                              </div>
-                              
-                              <div className={style.form_container}>
-                                  <Button background={'#FF8C00'} textColor={'#FFFFFF'} fontSize={'20px'} fontFamily={'Poppins'} width={'150px'} height={'50px'}>Empezar</Button>
-                              </div>
-                          </div>
-                      </div>
-  
-                  </div>
-              </section>
+            <Box>
+                {isSmallThan768 ?
+                    <DemoGenially>
+                        <Iframe
+                            url={url}
+                            width="375"
+                            height="202"
+                            position="absolute"
+                        />
+                    </DemoGenially>
+                :
+                <DemoGenially>
+                    <Iframe
+                        url={url}
+                        width="1024"
+                        height="650"
+                        position="absolute"
+                    />
+                </DemoGenially>}
+            </Box>
+            <div className="container">
+                <div className={style.containerVirtuals}>
+                    <Image src={banner_footer_priprimaria} />
+                    <div className={style.form_containerrigth}>
+                        <p className={style.rigthptext}>¡No esperes más!</p>
+                        <p className={style.rigthptext2}>Decidete hoy mismo a estudiar <br></br> virtual en Skolmi.</p>
+
+                    </div>
+
+                    <div className={style.form_container}>
+                        <Button background={'#FF8C00'} fontSize={'20px'} fontFamily={'Poppins'} width={'150px'} height={'50px'}>
+                            <a color="white" href="https://api.whatsapp.com/send?phone=+573023881611&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20">
+                                Empezar
+                            </a>
+                        </Button>
+                    </div>
+                </div>
+            </div>
         </Layout>
 
     );
