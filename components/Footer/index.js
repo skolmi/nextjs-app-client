@@ -73,10 +73,10 @@ export default function Footer() {
                         as={Stack}
                     >
                         <Stack fontSize={20} direction={'column'} spacing={6}>
-                            <Link href={'#'} fontWeight={600}>Nosotros</Link>
-                            <Link href={'#'}>Escuelas de padres</Link>
-                            <Link href={'#'}>¿Quiénes Somos?</Link>
-                            <Link href={'#'}>Certificación</Link>
+                            <Link href={'/us'} fontWeight={600}>Nosotros</Link>
+                            {/* <Link href={'#'}>Escuelas de padres</Link> */}
+                            <Link href={'/us'}>¿Quiénes Somos?</Link>
+                            {/* <Link href={'#'}>Certificación</Link> */}
                         </Stack>
                     </Container>
 
@@ -86,8 +86,8 @@ export default function Footer() {
                         spacing={6}
                         as={Stack} >
                         <Stack direction={'column'} fontSize={20} spacing={6}>
-                            <Link href={'#'} fontWeight={600}>¿Preguntas?</Link>
-                            <Link href={'#'}>Preguntas <br></br> frecuentes</Link>
+                            <Link href='https://api.whatsapp.com/send?phone=+573023881611&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20' fontWeight={600}>¿Preguntas?</Link>
+                            {/* <Link href={'#'}>Preguntas <br></br> frecuentes</Link> */}
                         </Stack>
                     </Container>
                     <Container className='col'

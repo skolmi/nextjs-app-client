@@ -33,7 +33,7 @@ export default function EducationOnl() {
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
-                        <Text className={style.text}>“¡Una primera experiencia es muy importante! Asegurate que tus hijos tengan una buena experiencia estudiando en Skolmi.</Text>
+                        <Text className={style.text}>¡Una primera experiencia es muy importante! Asegurate que tus hijos tengan una buena experiencia estudiando en Skolmi.</Text>
                     </Stack>
                     <Stack align={'center'}>
                         <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>
@@ -58,7 +58,7 @@ export default function EducationOnl() {
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
-                        <Text className={style.text}>Metodología afectiva para que tus se diviertan mientras aprenden.
+                        <Text className={style.text}>Metodología afectiva para que tus hijos se diviertan mientras aprenden.
                             ¡Estudiar no debe ser aburrido!</Text>
                         <Text> <br></br></Text>
                     </Stack>
@@ -110,7 +110,7 @@ export default function EducationOnl() {
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
-                        <Text className={style.text}>“¡Una primera experiencia es muy importante! Asegurate que tus hijos tengan una buena experiencia estudiando en Skolmi.</Text>
+                        <Text className={style.text}>Con Skolmi podrás ser bachiller sin importar tu edad, nuestra metodología es flexible y eficaz.</Text>
                     </Stack>
                     <Stack align={'center'}>
                         <Button background={'#00194A'} textColor={'#FFFFFF'} fontSize={'15px'} fontFamily={'Poppins'} width={'166px'}>

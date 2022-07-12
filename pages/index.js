@@ -3,7 +3,6 @@ import mainImageL from "./../assets/banner_principal.png";
 import mainImage1440 from '../assets/banner_principal_old.png';
 import Image from 'next/image';
 import style from './index.module.css';
-import FloatingWhatsApp from 'react-floating-whatsapp';
 import EducationOnl from './../components/EducationOnline';
 import BannerEndPage from '../components/BannerEndPage';
 import FormContact from '../components/FormContact';
@@ -32,7 +31,7 @@ import PaulaCortez from '../assets/Paula-Cortez.png';
 import SebastianPardo from '../assets/SebastianPardo.png';
 
 import React from 'react';
-import { useMediaQuery } from '@chakra-ui/react';
+import { useMediaQuery, Box } from '@chakra-ui/react';
 
 
 export default function Index() {
@@ -40,24 +39,15 @@ export default function Index() {
   return (
     <>
       <Layout>
-        <FloatingWhatsApp
-          phoneNumber="+573023881611"
-          accountName="Skolmi"
-          allowClickAway
-          notification
-          
-          notificationDelay={60000} // 1 minute
-          chatMessage=' ¡ Estamos para ayudarte !, te responderemos en el menor tiempo posible'
-          className={style.floating_Whatsapp}
-        />
         <section className="home_banner_area">
           <div className={style.img_container}>
-            {isLargeThan1441 ?
-            <Image src={mainImage1440}/>
-            :
-            <Image src={mainImageL}/>
-            
-          }
+            <Box>
+              {isLargeThan1441 ?
+                <Image src={mainImage1440}/>
+                :
+                <Image src={mainImageL} />
+              }
+            </Box>
             <div className={style.form_container}>
               <FormContact />
             </div>
@@ -110,9 +100,9 @@ export default function Index() {
           <div className={style.educacionvirtual}>
             <h1 className={style.texto1educacionvirtual}>Programas</h1>
             <h2 className={style.texto2educacionvirtual}>Educación Virtual</h2>
-          
+
           </div>
-          <EducationOnl/>
+          <EducationOnl />
         </section>
 
         <section>
@@ -206,109 +196,109 @@ export default function Index() {
             <span>Quienes ya confian en Skolmi</span>
           </div>
           <div className={`${style.carouselContainer} `}>
-          <Carousel showStatus={false}>
+            <Carousel showStatus={false}>
               <div className={style.carouselItem}>
-                  <TestimonyCard
-                    name = 'Camilo Camacho'
-                    study = 'Bachillerato'
-                    ocupation = 'Artista'
-                    text = 'Skolmi ha sido realmente la mejor decisión que pudimos tomar, ya que mis hijos han desarrollado habilidades nuevas y han logrado aprovechar mejor su tiempo para disfrutar de lo que más les gusta que es la danza. ¡¡Son lo mejor!!'
-                  >
-                    <Image
-                          boxSize={'136px !important'}
-                          src={CamiloCamachoImg}
-                          borderRadius='full'
-                          alt={'Author'}
-                          css={{
-                              border: '7px solid #00194A !important'
-                          }}
-                      />
-                  </TestimonyCard>
-                  <TestimonyCard
-                    name = 'Carlos Castañeda'
-                    study = 'Padre'
-                    ocupation = 'Conductor'
-                    text = 'Mi hijo estudia en Skolmi hace 3 años y el cambio fue muy positivo debido a que es deportista de alto rendimiento, estudiar virtual le ha permitido organizar su horario y hacer lo que le gusta.'
-                  >
-                    <Image
-                          boxSize={'136px !important'}
-                          src={CarlosCastaneda}
-                          borderRadius='full'
-                          alt={'Author'}
-                          css={{
-                              border: '7px solid #00194A !important'
-                          }}
-                      />
-                  </TestimonyCard>
-                  <TestimonyCard
-                  name = 'Daniela Caicedo'
-                  study = 'Bachillerato'
-                  ocupation = 'Estudiante'
-                  text = 'Actualmente estoy muy agusto en Skolmi, la plataforma es muy bonita, puedo participar en concursos, mis tutores son estupendos, mis amigas son las mejores, aprendo de formas entrenidas...'
-                  >
-                    <Image
-                          boxSize={'136px !important'}
-                          src={DanielaCaicedo}
-                          borderRadius='full'
-                          alt={'Author'}
-                          css={{
-                              border: '7px solid #00194A !important'
-                          }}
-                      />
-                  </TestimonyCard>
+                <TestimonyCard
+                  name='Camilo Camacho'
+                  study='Bachillerato'
+                  ocupation='Artista'
+                  text='Skolmi ha sido realmente la mejor decisión que pudimos tomar, ya que mis hijos han desarrollado habilidades nuevas y han logrado aprovechar mejor su tiempo para disfrutar de lo que más les gusta que es la danza. ¡¡Son lo mejor!!'
+                >
+                  <Image
+                    boxSize={'136px !important'}
+                    src={CamiloCamachoImg}
+                    borderRadius='full'
+                    alt={'Author'}
+                    css={{
+                      border: '7px solid #00194A !important'
+                    }}
+                  />
+                </TestimonyCard>
+                <TestimonyCard
+                  name='Carlos Castañeda'
+                  study='Padre'
+                  ocupation='Conductor'
+                  text='Mi hijo estudia en Skolmi hace 3 años y el cambio fue muy positivo debido a que es deportista de alto rendimiento, estudiar virtual le ha permitido organizar su horario y hacer lo que le gusta.'
+                >
+                  <Image
+                    boxSize={'136px !important'}
+                    src={CarlosCastaneda}
+                    borderRadius='full'
+                    alt={'Author'}
+                    css={{
+                      border: '7px solid #00194A !important'
+                    }}
+                  />
+                </TestimonyCard>
+                <TestimonyCard
+                  name='Daniela Caicedo'
+                  study='Bachillerato'
+                  ocupation='Estudiante'
+                  text='Actualmente estoy muy agusto en Skolmi, la plataforma es muy bonita, puedo participar en concursos, mis tutores son estupendos, mis amigas son las mejores, aprendo de formas entrenidas...'
+                >
+                  <Image
+                    boxSize={'136px !important'}
+                    src={DanielaCaicedo}
+                    borderRadius='full'
+                    alt={'Author'}
+                    css={{
+                      border: '7px solid #00194A !important'
+                    }}
+                  />
+                </TestimonyCard>
               </div>
               <div className={style.carouselItem}>
-              <TestimonyCard
-                name = 'María Teresa'
-                study = 'Madre'
-                ocupation = 'Publicista'
-                text = 'La plataforma muy interactiva, de fácil acceso, los docentes con una alta preparación en los temas, la flexibilidad de la plataforma nos permitía en familia realizar otras actividades.'
-              >
-                    <Image
-                          boxSize={'136px !important'}
-                          src={MariaTeresa}
-                          borderRadius='full'
-                          alt={'Author'}
-                          css={{
-                              border: '7px solid #00194A !important'
-                          }}
-                      />
-                  </TestimonyCard>
-                  <TestimonyCard
-                    name = 'Paula Cortez'
-                    study = 'Primaria'
-                    ocupation = 'Estudiante'
-                    text = 'Me gusta mucho estudiar en Skolmi por que la plataforma es muy bonita, los profes son muy creativos y amables, soy muy feliz.'
-                  >
-                    <Image
-                          boxSize={'136px !important'}
-                          src={PaulaCortez}
-                          borderRadius='full'
-                          alt={'Author'}
-                          css={{
-                              border: '7px solid #00194A !important'
-                          }}
-                      />
-                  </TestimonyCard>
-                  <TestimonyCard
-                    name = 'Sebastian Pardo'
-                    study = 'Primaria'
-                    ocupation = 'Youtuber'
-                    text = 'Me encanta estudiar en Skolmi, ya que me da mas tiempo para poder realizar mis actividades extra escolares, soy feliz estudiando con los profes, y enseñan con mucho amor.'
-                  >
-                    <Image
-                          boxSize={'136px !important'}
-                          src={SebastianPardo}
-                          borderRadius='full'
-                          alt={'Author'}
-                          css={{
-                              border: '7px solid #00194A !important'
-                          }}
-                      />
-                  </TestimonyCard>
+                <TestimonyCard
+                  name='María Teresa'
+                  study='Madre'
+                  ocupation='Publicista'
+                  text='La plataforma muy interactiva, de fácil acceso, los docentes con una alta preparación en los temas, la flexibilidad de la plataforma nos permitía en familia realizar otras actividades.'
+                >
+                  <Image
+                    boxSize={'136px !important'}
+                    src={MariaTeresa}
+                    borderRadius='full'
+                    alt={'Author'}
+                    css={{
+                      border: '7px solid #00194A !important'
+                    }}
+                  />
+                </TestimonyCard>
+                <TestimonyCard
+                  name='Paula Cortez'
+                  study='Primaria'
+                  ocupation='Estudiante'
+                  text='Me gusta mucho estudiar en Skolmi por que la plataforma es muy bonita, los profes son muy creativos y amables, soy muy feliz.'
+                >
+                  <Image
+                    boxSize={'136px !important'}
+                    src={PaulaCortez}
+                    borderRadius='full'
+                    alt={'Author'}
+                    css={{
+                      border: '7px solid #00194A !important'
+                    }}
+                  />
+                </TestimonyCard>
+                <TestimonyCard
+                  name='Sebastian Pardo'
+                  study='Primaria'
+                  ocupation='Youtuber'
+                  text='Me encanta estudiar en Skolmi, ya que me da mas tiempo para poder realizar mis actividades extra escolares, soy feliz estudiando con los profes, y enseñan con mucho amor.'
+                >
+                  <Image
+                    boxSize={'136px !important'}
+                    src={SebastianPardo}
+                    borderRadius='full'
+                    alt={'Author'}
+                    css={{
+                      border: '7px solid #00194A !important'
+                    }}
+                  />
+                </TestimonyCard>
               </div>
-          </Carousel>
-        </div>
+            </Carousel>
+          </div>
         </section>
 
         <div className={style.img_container}>
