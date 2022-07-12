@@ -58,7 +58,7 @@ export default function EducationOnl() {
                     </Stack>
 
                     <Stack spacing={0} align={'center'} m={5} >
-                        <Text className={style.text}>Metodología afectiva para que tus se diviertan mientras aprenden.
+                        <Text className={style.text}>Metodología afectiva para que tus hijos se diviertan mientras aprenden.
                             ¡Estudiar no debe ser aburrido!</Text>
                         <Text> <br></br></Text>
                     </Stack>
