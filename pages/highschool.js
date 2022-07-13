@@ -86,6 +86,7 @@ export default function highSchool() {
             </Box>
             <Box
                 maxWidth='1024px'
+                margin='auto'
             >
                 <DemoGenially>
                     <Iframe

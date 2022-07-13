@@ -71,6 +71,7 @@ export default function primary() {
             </Box>
             <Box
                 maxWidth='1024px'
+                margin='auto'
             >
                 <DemoGenially>
                     <Iframe

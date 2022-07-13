@@ -68,6 +68,7 @@ export default function preschool() {
             </Box>
             <Box
                 maxWidth='1024px'
+                margin='auto'
             >
                 <DemoGenially>
                     <Iframe 
