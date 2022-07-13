@@ -33,10 +33,11 @@ export default function payments() {
                     width='500px'
                 >
                     <Text textAlign='center' fontSize='3xl'>
-                        En Skolmi te ofrecemos varias opciones para realizar tus pagos <br />
-                        PAGO PSE, TARJETA DE CREDITO, PRODUCTOS DAVIVIENDA Y DAVIPLATA <br />
-                        Por favor llena el siguiente formulario con los datos del estudiante <br />
+                        En Skolmi te ofrecemos varias opciones para realizar tus pagos <br/>
+                        PAGO PSE, TARJETA DE CREDITO, PRODUCTOS DAVIVIENDA,DAVIPLATA Y TRANSFERENCIA BANCARIA <br/>
                     </Text>
+                    <Text color='red'>Puedes realizar transferencia bancaria a Cuenta de ahorros Davivienda No.046400212539 a nombre de SKOLMI.</Text>
+                    <Text>Por favor llena el siguiente formulario con los datos del estudiante <br/></Text>
                     <form
                         ref={form}
                         onSubmit={(e) => {
@@ -114,6 +115,7 @@ export default function payments() {
                                 Enviar
                             </Button>
                         </Box>
+                        <Text fontWeight='extrabold' color='red' textAlign='center'>¡ Al terminar la transacción recuerda enviar el comprobante de pago al correo electronico admisiones@skolmi.com !</Text>
                     </form>
                     {showModal ? (
                         <Box className={style.modal}>
