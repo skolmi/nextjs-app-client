@@ -12,7 +12,7 @@ import banner_footer_preescolar from "././../assets/banner_footer_preescolar.png
 import Iframe from "react-iframe";
 
 import {
-    Button, useMediaQuery, Box
+    Button, useMediaQuery, Box, Text
 } from "@chakra-ui/react";
 import DemoGenially from "../components/DemoGenially";
 
@@ -59,25 +59,24 @@ export default function preschool() {
                     </div> */}
                 </div>
             </section>
-            <Box>
-                {isSmallThan768 ?
-                    <DemoGenially>
-                        <Iframe
-                            url={url}
-                            width="375"
-                            height="202"
-                            position="absolute"
-                        />
-                    </DemoGenially>
-                    :
-                    <DemoGenially>
-                        <Iframe
-                            url={url}
-                            width="1024"
-                            height="650"
-                            position="absolute"
-                        />
-                    </DemoGenially>}
+            <Box className={style.container}>
+                <Text className={style.title}>Objeto Virtual de Aprendizaje (Demo)</Text>
+            </Box>
+            <Box className={style.containers}>
+                <Text>La virtualidad es un sistema de acceso y representación de la realidad  que desde lo digital potencia nuestras habilidades, intensifica nuestras capacidades y se manifiesta a través de actos comunicativos.
+                    Los objetos virtuales de aprendizaje son recursos educativos estructurados para hacer del acto de aprendizaje una experiencia significativa a través de la interacción, la inmersión y la cercanía de los contenidos.</Text>
+            </Box>
+            <Box
+                maxWidth='1024px'
+            >
+                <DemoGenially>
+                    <Iframe 
+                        url={url} 
+                        width="100%"
+                        height="100%"
+                        position="absolute"
+                    />
+                </DemoGenially>
             </Box>
             <div className="container">
                     <div className={style.containerVirtuals}>
