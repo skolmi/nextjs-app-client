@@ -23,6 +23,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import TestimonyCard from "../components/TestimonyCard";
 
+
 import CamiloCamachoImg from '../assets/CamiloCamacho.png';
 import CarlosCastaneda from '../assets/Carlos-Castañeda.png';
 import DanielaCaicedo from '../assets/DanielaCaicedo.png';
