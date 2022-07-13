@@ -77,7 +77,7 @@ export default function highSchool() {
                     </div>
                 </div>
             </section>
-            <Box className={style.container}>
+            <Box background='#00194A'>
                 <Text className={style.title}>Objeto Virtual de Aprendizaje (Demo)</Text>
             </Box>
             <Box className={style.containers}>
