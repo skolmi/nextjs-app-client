@@ -581,6 +581,41 @@ text-align: center;
 
 }
 
+/* genially */
+.title {
+    
+    color: white;
+    font-family: 'Poppins';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.container{
+    background-color: #0B0B61;
+    padding: 20px;
+}
+.containers {
+    
+    text-align: center;
+}
+
+.containers img{
+    width: 100%;
+    height: auto;
+}
+
+.containers p{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: 50px;
+}
+
 .carouselItem {
     display: flex;
     justify-content: center;
