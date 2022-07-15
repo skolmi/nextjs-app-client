@@ -16,9 +16,6 @@ import {
 } from "@chakra-ui/react";
 export default function highSchool() {
     const url = 'https://view.genial.ly/62c5a7e06b08dc0018d3eea5'
-    const [isSmallThan768] = useMediaQuery(`(max-width:769px)`);
-
-    const [isLargeThan1024] = useMediaQuery(`(min-width:1024px)`);
     return (
         <Layout>
             <section className="home_banner_area">
