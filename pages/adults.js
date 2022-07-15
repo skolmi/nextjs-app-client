@@ -9,8 +9,9 @@ import TestimonyCard from "../components/TestimonyCard";
 import { Carousel } from "react-responsive-carousel";
 import imagewellnes from "./../assets/image_wellness.png";
 import banner_footer_priprimaria from "././../assets/banner_footer_priprimaria.png";
+import adultos_info_image_large from '../assets/adultos_info_large.png';
 import {
-    Button
+    Button, Box
 } from "@chakra-ui/react";
 export default function highSchool() {
     return (
@@ -23,29 +24,9 @@ export default function highSchool() {
                     </div>
                 </div>
             </section>
-            <section >
-                <div className={style.panelbachiAdults}>
-                    <div className="">
-                        <div className="row">
-                            <div className="col">
-                                <div className={style.diventer}>
-                                    <h1 className={style.textoadults}>bachillerato Adultos</h1>
-                                    <p className={style.textooferta}>Es una experiencia educativa flexible y transformadora. Se adapta a los estilos y ritmos de aprendizaje de los estudiantes, con estrategias de formación que armonizan educación y vida personal. Desarrollará  habilidades, destrezas y conocimientos para enfrentarse a situaciones propias de la vida o el trabajo, así como se constituirá en la base para proyectos educativos futuros.</p>
-                                </div>
-                            </div>
-
-                            <div className="col">
-                                <div className={style.form_container} >
-                                    <Image height={361} width={512} src={adultosinfo}></Image>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
+            <Box>
+                <Image src={adultos_info_image_large}/>
+            </Box>
             <section  >
                 <div >
                     <div className={style.containeradults}>
