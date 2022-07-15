@@ -10,6 +10,8 @@ import { Carousel } from "react-responsive-carousel";
 import imagewellnes from "./../assets/image_wellness.png";
 import banner_footer_preescolar from "././../assets/banner_footer_preescolar.png";
 import Iframe from "react-iframe";
+import preescolar_info_image from '../assets/Preescolar_Info.png';
+import preescolar_info_image_large from '../assets/preescolar_info_large.png';
 
 import {
     Button, useMediaQuery, Box, Text
@@ -28,13 +30,35 @@ export default function preschool() {
             <section className="home_banner_area">
                 <div className={style.img_container}>
                     <Image src={preescolar} />
-                    <div className={style.form_container}>
+                    <Box className={style.form_container}>
                         <FormContact />
-                    </div>
+                    </Box>
                 </div>
-                <div className={style.img_container}>
-                    <Image src={preescolar_info} />
-                </div>
+                <Box>
+                    {/* <Box display='flex'>
+                        <Box position='relative'>
+                            <Image src={preescolar_info} />
+                        </Box>
+                        <Box 
+                            position='absolute' 
+                            maxWidth='740px'
+                            padding='5%'
+                        >
+                            <Text 
+                                color='#FF8C00'
+                            >
+                                Preescolar
+                            </Text>
+                            <Text 
+                                textAlign='center' 
+                                color='white'
+                            >
+                                Es una experiencia basada en el afecto, el diálogo y la creatividad. Propiciamos la educación como un espacio intencionado, donde las familias y los maestros, impulsan a través del amor, los procesos iniciales de formación, basados en el diálogo y la comunicación, estimulando el desarrollo de todas las dimensiones de nuestros niños.
+                            </Text>
+                        </Box>
+                    </Box> */}
+                    <Image src={preescolar_info_image_large}/>
+                </Box>
             </section>
             <section  >
                 <div className={style.containerPress}>
@@ -71,8 +95,8 @@ export default function preschool() {
                 margin='auto'
             >
                 <DemoGenially>
-                    <Iframe 
-                        url={url} 
+                    <Iframe
+                        url={url}
                         width="100%"
                         height="100%"
                         position="absolute"
@@ -80,23 +104,23 @@ export default function preschool() {
                 </DemoGenially>
             </Box>
             <div className="container">
-                    <div className={style.containerVirtuals}>
-                        <Image src={banner_footer_preescolar} />
-                        <div className={style.form_containerrigth}>
-                            <p className={style.rigthptext}>¡No esperes más!</p>
-                            <p className={style.rigthptext2}>Decidete hoy mismo a estudiar <br></br> virtual en Skolmi.</p>
+                <div className={style.containerVirtuals}>
+                    <Image src={banner_footer_preescolar} />
+                    <div className={style.form_containerrigth}>
+                        <p className={style.rigthptext}>¡No esperes más!</p>
+                        <p className={style.rigthptext2}>Decidete hoy mismo a estudiar <br></br> virtual en Skolmi.</p>
 
-                        </div>
+                    </div>
 
-                        <div className={style.form_container}>
-                            <Button background={'#FF8C00'} fontSize={'20px'} fontFamily={'Poppins'} width={'150px'} height={'50px'}>
-                                <a color="white" href="https://api.whatsapp.com/send?phone=+573023881611&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20">
-                                    Empezar
-                                </a>
-                            </Button>
-                        </div>
+                    <div className={style.form_container}>
+                        <Button background={'#FF8C00'} fontSize={'20px'} fontFamily={'Poppins'} width={'150px'} height={'50px'}>
+                            <a color="white" href="https://api.whatsapp.com/send?phone=+573023881611&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20">
+                                Empezar
+                            </a>
+                        </Button>
                     </div>
                 </div>
+            </div>
         </Layout>
 
     );
