@@ -10,7 +10,6 @@ import { Carousel } from "react-responsive-carousel";
 import imagewellnes from "./../assets/image_wellness.png";
 import banner_footer_preescolar from "././../assets/banner_footer_preescolar.png";
 import Iframe from "react-iframe";
-import preescolar_info_image from '../assets/Preescolar_Info.png';
 import preescolar_info_image_large from '../assets/preescolar_info_large.png';
 
 import {
@@ -22,9 +21,6 @@ import DemoGenially from "../components/DemoGenially";
 export default function preschool() {
     const url = 'https://view.genial.ly/62c838821fa1e10010586f5a';
 
-    const [isSmallThan768] = useMediaQuery(`(max-width:769px)`);
-
-    const [isLargeThan1024] = useMediaQuery(`(min-width:1024px)`);
     return (
         <Layout>
             <section className="home_banner_area">
@@ -35,28 +31,6 @@ export default function preschool() {
                     </Box>
                 </div>
                 <Box>
-                    {/* <Box display='flex'>
-                        <Box position='relative'>
-                            <Image src={preescolar_info} />
-                        </Box>
-                        <Box 
-                            position='absolute' 
-                            maxWidth='740px'
-                            padding='5%'
-                        >
-                            <Text 
-                                color='#FF8C00'
-                            >
-                                Preescolar
-                            </Text>
-                            <Text 
-                                textAlign='center' 
-                                color='white'
-                            >
-                                Es una experiencia basada en el afecto, el diálogo y la creatividad. Propiciamos la educación como un espacio intencionado, donde las familias y los maestros, impulsan a través del amor, los procesos iniciales de formación, basados en el diálogo y la comunicación, estimulando el desarrollo de todas las dimensiones de nuestros niños.
-                            </Text>
-                        </Box>
-                    </Box> */}
                     <Image src={preescolar_info_image_large}/>
                 </Box>
             </section>

@@ -11,6 +11,7 @@ import imagewellnes from "./../assets/image_wellness.png";
 import banner_footer_priprimaria from "././../assets/banner_footer_priprimaria.png";
 import DemoGenially from "../components/DemoGenially";
 import Iframe from "react-iframe";
+import highschool_info_image_large from '../assets/bachillerato_info_large.png';
 import {
     Button, Box, useMediaQuery, Text
 } from "@chakra-ui/react";
@@ -26,7 +27,10 @@ export default function highSchool() {
                     </div>
                 </div>
             </section>
-            <section >
+            <Box>
+                <Image src={highschool_info_image_large}/>
+            </Box>
+            {/* <section >
                 <div className={style.panelbachi}>
                     <div className="">
                         <div className="row">
@@ -36,19 +40,15 @@ export default function highSchool() {
                                     <p className={style.textooferta}>Es una experiencia educativa integral, autónoma y flexible. Desde nuestro horizonte pedagógico se desarrollan metodologías educativas que propenden por el desarrollo del estudiante como sujeto activo de su proceso formativo que tiene el nivel competencial para enfrentarse a los desafíos que el mundo le impone, además de adaptarse a las dinámicas, estilos y ritmos de aprendizajes propios de cada uno.</p>
                                 </div>
                             </div>
-
                             <div className="col">
                                 <div className={style.form_container} >
                                     <Image height={361} width={512} src={bachillerato}></Image>
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
-            </section>
+            </section> */}
             <section  >
                 <div >
                     <div className={style.containeradults}>

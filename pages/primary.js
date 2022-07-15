@@ -11,6 +11,7 @@ import imagewellnes from "./../assets/image_wellness.png";
 import banner_footer_priprimaria from "././../assets/banner_footer_priprimaria.png";
 import DemoGenially from "../components/DemoGenially";
 import Iframe from "react-iframe";
+import primary_info_image_large from '../assets/primaria_info_large.png';
 
 
 
@@ -33,9 +34,9 @@ export default function primary() {
                         <FormContact />
                     </div>
                 </div>
-                <div className={style.img_container}>
-                    <Image src={primaria_info} />
-                </div>
+                <Box>
+                    <Image src={primary_info_image_large} />
+                </Box>
             </section>
             <section  >
                 <div >
