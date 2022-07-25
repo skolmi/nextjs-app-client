@@ -20,10 +20,23 @@ export default function FormContact() {
     const [phone, setPhone] = useState('');
     const [option, setOption] = useState('');
     const [isError, setIsError] = useState(false);
+    const [body, setBody] = useState('')
 
     const form = useRef();
 
     const [isLargeThan362] = useMediaQuery(`(min-widhth:362px)`)
+
+    const submitData = async () => {
+        const response = await fetch('http://skolm-publi-13rm1vhreekyj-682946716.us-west-2.elb.amazonaws.com/api/zendesk/createlead', {
+            method: 'POST',
+            body: JSON.stringify({body}),
+            headers: {
+                'Content-type': 'application/json',
+            },
+        });
+        const data = await response.json();
+        console.log(data);
+    }
 
     return (
         <div className={style.form_container}>
@@ -42,12 +55,20 @@ export default function FormContact() {
                     } else {
                         setIsError(false);
                         // use emailjs to send email
-                        emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
-                            .then((result) => {
-                                console.log(result.text);
-                            }, (error) => {
-                                console.log(error.text);
-                            })
+                        // emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
+                        //     .then((result) => {
+                        //         console.log(result.text);
+                        //     }, (error) => {
+                        //         console.log(error.text);
+                        //     })
+                        setBody({
+                            "name": name,
+                            "email": email,
+                            "phone": phone,
+                            "option": option
+                        })
+                        submitData();
+                        // console.log(body)
                     }
                 }}
             >
