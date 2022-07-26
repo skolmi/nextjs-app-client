@@ -62,12 +62,12 @@ export default function FormContact() {
                     } else {
                         setIsError(false);
                         // use emailjs to send email
-                        // emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
-                        //     .then((result) => {
-                        //         console.log(result.text);
-                        //     }, (error) => {
-                        //         console.log(error.text);
-                        //     })
+                        emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
+                            .then((result) => {
+                                console.log(result.text);
+                            }, (error) => {
+                                console.log(error.text);
+                            })
                         setBody({
                             "name": name,
                             "email": email,
@@ -75,7 +75,7 @@ export default function FormContact() {
                             "option": option
                         })
                         submitData();
-                        console.log(body)
+                        // console.log(body)
                     }
                 }}
             >
