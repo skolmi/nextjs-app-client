@@ -252,6 +252,10 @@ const NAV_ITEMS = [
             {
                 label: 'Adultos',
                 href: '/adults',
+            },
+            {
+                label: 'Mandarin',
+                href: 'https://mandarin.skolmi.com/',
             }
         ],
     },
