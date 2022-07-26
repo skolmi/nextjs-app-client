@@ -27,7 +27,7 @@ export default function FormContact() {
     const [isLargeThan362] = useMediaQuery(`(min-widhth:362px)`)
 
     const submitData = async () => {
-        const response = await fetch('http://skolm-publi-1v74k2zsoxnaz-1516266332.us-west-2.elb.amazonaws.com/zendesk/createlead', {
+        const response = await fetch('https://api.test.skolmi.skolmi.com/zendesk/createlead', {
             method: 'POST',
             body: JSON.stringify({body}),
             headers: {
