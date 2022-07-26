@@ -34,6 +34,13 @@ export default function FormContact() {
                 'Content-type': 'application/json',
             },
         });
+        // const response = await fetch('http://localhost:5050/zendesk/createlead', {
+        //     method: 'POST',
+        //     body: JSON.stringify({body}),
+        //     headers: {
+        //         'Content-type': 'application/json',
+        //     },
+        // });
         const data = await response.json();
         console.log(data);
     }
@@ -68,7 +75,7 @@ export default function FormContact() {
                             "option": option
                         })
                         submitData();
-                        // console.log(body)
+                        console.log(body)
                     }
                 }}
             >
