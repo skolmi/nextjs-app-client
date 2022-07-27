@@ -5,7 +5,7 @@ import {
     useMediaQuery
 } from "@chakra-ui/react";
 
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 
 import style from './style.module.css'
 
@@ -20,10 +20,25 @@ export default function FormContact() {
     const [phone, setPhone] = useState('');
     const [option, setOption] = useState('');
     const [isError, setIsError] = useState(false);
+    const [body, setBody] = useState('')
+
 
     const form = useRef();
 
     const [isLargeThan362] = useMediaQuery(`(min-widhth:362px)`)
+
+
+    // update body using useEffect
+    React.useEffect(() => {
+        setBody({
+            name: name,
+            email: email,
+            phone: phone,
+            option: option
+        })
+    }, [name, email, phone, option])
+
+
 
     return (
         <div className={style.form_container}>
@@ -47,7 +62,19 @@ export default function FormContact() {
                                 console.log(result.text);
                             }, (error) => {
                                 console.log(error.text);
-                            })
+                            });
+                        const submitData = async () => {
+                            const response = await fetch('https://api.test.skolmi.skolmi.com/zendesk/createlead', {
+                                method: 'POST',
+                                body: JSON.stringify({ body }),
+                                headers: {
+                                    'Content-type': 'application/json',
+                                },
+                            });
+                            const data = await response.json();
+                        }
+                        console.log(body);
+                        submitData();
                     }
                 }}
             >
