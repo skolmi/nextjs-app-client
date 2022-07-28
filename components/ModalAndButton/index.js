@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import style from './style.module.css';
 import { 
+    Box,
     Button,
     Text  
 } from "@chakra-ui/react";
@@ -29,24 +30,9 @@ export default function ModalAndButton(props) {
 
             {showModal && !isError ? (
                 <div className={`${style.modal}`}>
-                    <div className={style.image}>
+                    <Box width='100%'>
                         <FcOk/>
-                    </div>
-                    <Text fontSize='2xl' color='black'>¡ Estas un paso mas cerca de todos tus objetivos !</Text>
-                    <Text fontSize='2xl' color='black'>revisa tu bandeja de entrada</Text>
-                    <Button
-                        onClick={() => setShowModal(false)}
-                        type="submit"
-                        mt={8}
-                        width="50%"
-                        bg='#00194A'
-                        color='white'
-                        fontSize='20px'
-                        padding={'10px'}
-                        _hover={'#00194A'}
-                    >
-                        Cerrar
-                    </Button>
+                    </Box>
                 </div>
             ) : null}
         </div>
