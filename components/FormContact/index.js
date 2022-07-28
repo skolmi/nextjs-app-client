@@ -13,6 +13,8 @@ import emailjs from '@emailjs/browser'
 
 import ModalAndButton from "../ModalAndButton";
 
+import { useRouter } from "next/router";
+
 
 export default function FormContact() {
     const [name, setName] = useState('');
@@ -26,6 +28,8 @@ export default function FormContact() {
     const form = useRef();
 
     const [isLargeThan362] = useMediaQuery(`(min-widhth:362px)`)
+
+    const router = useRouter();
 
 
     // update body using useEffect
@@ -75,6 +79,7 @@ export default function FormContact() {
                         }
                         console.log(body);
                         submitData();
+                        router.push('/confirmation');
                     }
                 }}
             >
