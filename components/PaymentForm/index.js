@@ -6,7 +6,7 @@ export default function PaymentForm({value}) {
         const script = document.createElement("script");
         script.src="https://checkout.epayco.co/checkout.js"
         script.setAttribute('class',"epayco-button")
-        script.setAttribute('data-epayco-key',"e2a4be24af5151166c2d45c1fcb1214c")
+        script.setAttribute('data-epayco-key',`${process.env.NEXT_PUBLIC_ENV_LOCAL_EPAYCO_KEY}`)
         script.setAttribute('data-epayco-amount',`${value||"1000"}`)
         script.setAttribute('data-epayco-name',`${"Skolmi SAS"}`)
         script.setAttribute('data-epayco-description',`${"Skolmi SAS"}`)

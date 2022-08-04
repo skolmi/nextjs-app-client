@@ -16,6 +16,7 @@ import ModalAndButton from "../ModalAndButton";
 import { useRouter } from "next/router";
 
 
+
 export default function FormContact() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -42,8 +43,6 @@ export default function FormContact() {
         })
     }, [name, email, phone, option])
 
-
-
     return (
         <div className={style.form_container}>
             {isLargeThan362 ?
@@ -61,12 +60,19 @@ export default function FormContact() {
                     } else {
                         setIsError(false);
                         // use emailjs to send email
-                        emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
-                            .then((result) => {
-                                console.log(result.text);
-                            }, (error) => {
-                                console.log(error.text);
-                            });
+
+                        //use enviroment variables to send email
+                        emailjs.sendForm(
+                            `${process.env.NEXT_PUBLIC_ENV_LOCAL_SERVICE_EMAIL_JS}`, 
+                            `${process.env.NEXT_PUBLIC_ENV_LOCAL_TEMPLATE_EMAIL_JS_ID}`, 
+                            form.current, 
+                            `${process.env.NEXT_PUBLIC_ENV_LOCAL_PUBLIC_KEY_EMAIL_JS}`)
+                                .then((res) => {
+                                    console.log(res);
+                                    // console.log(process.env.NEXT_PUBLIC_ENV_LOCAL_SERVICE_EMAIL_JS);
+                                }, (err) => {
+                                    console.log(err);
+                                });
                         const submitData = async () => {
                             const response = await fetch('https://api.test.skolmi.skolmi.com/zendesk/createlead', {
                                 method: 'POST',
