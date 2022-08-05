@@ -61,7 +61,7 @@ export default function FormContact() {
                     } else {
                         setIsError(false);
                         // use emailjs to send email
-                        emailjs.sendForm('service_g3a9b6m', 'contact_form', form.current, 'J8m3krTKjpgs-dSSU')
+                        emailjs.sendForm(`${process.env.NEXT_PUBLIC_ID_SERVICE_EMAILJS}`, `${process.env.NEXT_PUBLIC_EMAIL_TEMPLATE}`, form.current, `${process.env.NEXT_PUBLIC_PUBLIC_KEY_EMAILJS}`)
                             .then((result) => {
                                 console.log(result.text);
                             }, (error) => {
